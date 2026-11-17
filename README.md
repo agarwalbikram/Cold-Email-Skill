@@ -125,7 +125,7 @@ skills/
       evals.json                  # Behavioral evaluation prompts and expectations
 ```
 
-`evals/evals.json` is an evaluation dataset, not an automated test runner. It contains 42 cases, including five [file-backed persistence scenarios](skills/bikram-cold-email-skill/evals/README.md) and no-customer-proof/affiliate-writing cases. Fixture presence is not evidence that a bot passed them. `.projectmem/` is local maintainer memory, not a runtime dependency or part of the installed skill. The writing references originated from [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills/tree/main/skills/cold-email); this repository adds dedicated-client memory, bot routing, MailWizz workflows and [grounded framework examples](skills/bikram-cold-email-skill/references/frameworks.md) selected by audience, offer, evidence and campaign mode, without a default framework.
+`evals/evals.json` is an evaluation dataset, not an automated test runner. It contains 44 cases, including five [file-backed persistence scenarios](skills/bikram-cold-email-skill/evals/README.md), no-customer-proof/affiliate-writing cases, and service-led reference-style cases. Fixture presence is not evidence that a bot passed them. `.projectmem/` is local maintainer memory, not a runtime dependency or part of the installed skill. The writing references originated from [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills/tree/main/skills/cold-email); this repository adds dedicated-client memory, bot routing, MailWizz workflows and [grounded framework examples](skills/bikram-cold-email-skill/references/frameworks.md) selected by audience, offer, evidence and campaign mode, without a default framework.
 
 ## Updating
 

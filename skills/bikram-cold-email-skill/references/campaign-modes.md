@@ -37,7 +37,7 @@ Record `commercial_relationship: clickbank_affiliate`, the actual seller and off
 ## Promotional output and sequence rules
 
 - Match supplied subjects and swipes to documented claims; flag deceptive or unsupported elements instead of copying them. Preserve requested wording only when safe and accurate.
-- One CTA can link to the approved sales/affiliate destination in the first promotional email. This is an explicit exception to B2B cold email's no-first-touch-marketing-link guidance, not an exception to disclosure, permission, or approval.
+- One primary CTA can link to the approved sales/affiliate destination in the first promotional email. B2B cold first touches often work as reply-first notes, but an operator-requested approved website in the signature is allowed; do not impose a blanket first-touch link ban. Links never waive disclosure, permission or campaign approval.
 - Do not apply B2B cold reply-rate benchmarks as expected promotional conversion results. Use verified client data; report revenue or purchases only when actual attribution evidence is available.
 - Promotional sequences need approved frequency, permission scope, deadline, and stop rules. Unsubscribes, complaints, and hard bounces always block further sends within the applicable scope. A conversational reply pauses automated follow-ups for review. Purchase-based stopping requires a verified purchase source and matching; if unavailable, do not promise it or schedule a sequence whose eligibility depends on it.
 - Use the same versioned approval packet and MailWizz readback as other campaigns. Each variant or step scheduled must be explicitly included. Operator approval cannot authorize unlawful or program-prohibited promotion.

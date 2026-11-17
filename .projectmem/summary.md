@@ -16,10 +16,10 @@ Replace this placeholder with a concise description of what this project does, w
 - Approved improvement scope: persistent host greeting-load evidence, explicit action-specific approval for replies/calendar/reminders, five file-backed persistence evals, and deletion of obsolete deployment guidance. Keep all client/send boundaries; no live sends or automatic publication. [skills/bikram-cold-email-skill/]
 - Clarified campaign scope: no infrastructure/deliverability audits or DNS/seed proof launch gate; report MCP-exposed metrics/status read-only with unknowns distinct from zero; preserve tracking unless explicitly approved, then read back. Updated owned agent guidance and eval dataset/cases.
 - User scope: client/brand email and sequence writing, approved MailWizz create/schedule, on-request status/opens/clicks/unsubs/bounces plus suggestions. Remove infrastructure audits/booking duties. Tracking defaults off but explicit approved choices allowed; reports read-only, missing != zero. [skills/bikram-cold-email-skill/]
+- Added evals 43–44 for contextual, one-draft service-led reference use, verified personalization and literal unknown brand token, one reply goal, informational signature URL, no invented proof, and no permanent style change absent instruction; case 7 now evaluates Quick question/em dashes...
+- User-approved style optimization: current operator example > saved brand style > generic defaults; preserve service explanation/greeting/signature, allow Quick question/em dashes and one conversion goal with two questions. No hard word quota; factual, field, opt-out and send approval protections... [skills/bikram-cold-email-skill/]
 
 ## Notes
-- Compared original 3d47d37 cold-email/AGENTS.md: bundled agent-policy preserves all 8 request steps except private-profile path; persistent-file and safety sections identical. Root now mandates loading full policy; removed recursive invocation and README rename section. Published f89e8ff; 73... [AGENTS.md]
-- Committed Skill_Agents.md handoff/README as 343f15b (not pushed). Read-only review suggests clearer greeting-load handoff, fixture-backed evaluations (30 cases, no attached files), and harmonized reply/booking approval wording. No improvement edits authorized or made. [Skill_Agents.md]
 - Eval cases 31–35 use offline synthetic fixtures; copy each files[] input into a fresh .tmp/<case>/client-data/ with explicit profile/register mapping. Fixtures are datasets, never run results; no MCP or live send is authorized.
 - Case 35 requires the local register to represent the persisted pre-mutation approved campaign; a blank register would contradict the required save-before-remote-operation workflow.
 - High churn detected: skills\bikram-cold-email-skill\evals\README.md (4 edits in 10 min) [skills\bikram-cold-email-skill\evals\README.md]
@@ -28,6 +28,8 @@ Replace this placeholder with a concise description of what this project does, w
 - High churn detected: skills\bikram-cold-email-skill\evals\evals.json (4 edits in 10 min) [skills\bikram-cold-email-skill\evals\evals.json]
 - Scope cleanup v3.4.0: replaced infra guide with copy-quality; removed booking playbook; approved tracking choices + read-only metrics/suggestions. 9 JSON/40 IDs/79 links pass. Two offline reporting generations correct; independent boundary review passed. Live MCP untested, no commit. [skills/bikram-cold-email-skill/]
 - Rewrote 13 framework sections with evidence-scoped examples, no default PAS, no invented named-brand results, no-proof and affiliate modes; aligned SKILL shapes and added cases 41-42. 9 JSON/42 IDs/81 links pass. Two offline drafts avoided fabricated proof; live performance unmeasured. [skills/bikram-cold-email-skill/references/frameworks.md]
+- High churn detected: skills\bikram-cold-email-skill\evals\evals.json (4 edits in 10 min) [skills\bikram-cold-email-skill\evals\evals.json]
+- v3.5.0 style optimization implemented: operator examples guide greeting/detail/service explanation/CTA/signature; no forced teaser or phrase ban. 9 JSON/44 cases/81 links pass. Offline reference draft followed style; unsupported-proof countercase asked for facts. Two review nits fixed/checked.... [skills/bikram-cold-email-skill/]
 
 ## Key files
 - `.gitattributes`

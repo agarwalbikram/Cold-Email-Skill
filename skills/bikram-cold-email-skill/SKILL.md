@@ -2,7 +2,7 @@
 name: bikram-cold-email-skill
 description: "Dedicated-client email marketing bot: remember company/brand/offer requirements, write and improve cold emails, variations and sequences from supplied briefs/PDFs, create and schedule exact-version-approved MailWizz campaigns, and report campaign status, opens, clicks, unsubscribes and bounces with actionable suggestions. Support own-product, affiliate and ClickBank offers. No infrastructure audits or non-email outreach."
 metadata:
-  version: "3.4.0"
+  version: "3.5.0"
 ---
 
 # Bikram Cold Email Skill
@@ -28,43 +28,45 @@ Read [workspace.md](references/workspace.md) and [agent-policy.md](references/ag
 5. Resolve the requested output: one email, the requested number of distinct variations, or a sequence with explicit step timing. Use stored defaults if unspecified. Variations are alternatives, not permission to send every version.
 6. Write MailWizz-style tags such as `[FNAME]` and `[LNAME]`; custom tags must match the selected list. See [personalization.md](references/personalization.md). Keep review notes and unverified facts outside sendable copy.
 
+**Match the operator's example first.** When asked to write like a supplied email, use its tone, greeting, structure, detail, CTA and signature as the primary style reference. The current request wins over stored brand style; stored style wins over generic brevity/framework defaults. Preserve the relevant service explanation instead of compressing it into a teaser. Examples supply style, not evidence for claims or permission to send. Save an example as a lasting brand preference only when explicitly requested; see client-workflow.md.
+
 The writing principles and benchmarks below default to **B2B cold email**. In permission-based promotional mode, campaign-modes.md governs offer links, disclosures, CTA, and subject style. Universal honesty, eligibility, unsubscribe, and per-campaign approval rules always apply. Missing sending details may block scheduling without blocking a useful local draft.
 
 ---
 
 ## Writing Principles
 
-### Write like a peer, not a vendor
+### Sound human and explain the offer
 
-The email should read like it came from someone who understands their world and isn't trying to sell them something. Use contractions. Read it aloud. If it sounds like marketing copy, rewrite it.
+Be friendly, direct and confident without exaggerated claims or generic sales jargon. A clear company introduction and service explanation are appropriate when they help the recipient understand the offer, especially in a service-led reference. Marketing intent is not a defect to hide.
 
 ### Every sentence must earn its place
 
-Cold email is ruthlessly short. If a sentence doesn't move the reader toward replying, cut it. The best cold emails feel like they could have been shorter, not longer.
+Cut filler, not useful detail. Follow the requested example's length and level of explanation. A simple offer may fit a short note; a service-led introduction may need roughly 90–140 body words. These are examples, not quotas or caps; do not pad or force every email into an ultra-short teaser.
 
 ### Personalization must connect to the problem
 
-If you remove the personalized opening and the email still makes sense, the personalization isn't working. The observation should naturally lead into why you're reaching out.
+Connect verified personalization to the recipient's goal and the offer. A greeting plus a relevant brand-growth question is valid without a researched trigger; do not invent observations or force research-dependent openers.
 
 See [personalization.md](references/personalization.md) for the 4-level system and research signals.
 
 ### Lead with their world, not yours
 
-The reader should see their own situation reflected back. "You/your" should dominate over "I/we." Don't open with who you are or what your company does.
+Start with the recipient's goal when useful, then explain who the sender is, the relevant services and their benefit. Use "we" and "you" naturally; no pronoun quota or blanket ban on a company introduction. Follow the requested style.
 
-### One ask, low friction
+### One primary goal, low friction
 
-Interest-based CTAs ("Worth exploring?" / "Would this be useful?") beat meeting requests. One CTA per email. Make it easy to say yes with a one-line reply.
+Use one clear conversion goal, such as accepting a free audit. An opening relevance question and a closing audit invitation can support the same goal. A signature website and separate opt-out are not competing sales asks. Avoid unrelated actions or heavy meeting demands unless requested; follow the reference's appropriate CTA.
 
 ---
 
 ## Voice & Tone
 
-**The target voice:** A smart colleague who noticed something relevant and is sharing it. Conversational but not sloppy. Confident but not pushy.
+**Default voice:** Friendly, clear, professional and conversational. Match the operator's supplied example or selected brand style before applying generic audience defaults. "Quick question" and an occasional em dash are allowed style choices, not automatic spam or AI indicators.
 
 **Calibrate to the audience:**
 
-- C-suite: ultra-brief, peer-level, understated
+- C-suite: concise and peer-level, while retaining the requested service explanation
 - Mid-level: more specific value, slightly more detail
 - Technical: precise, no fluff, respect their intelligence
 
@@ -143,7 +145,8 @@ Before presenting, gut-check:
 - Would YOU reply to this if you received it?
 - Does every sentence serve the reader, not the sender?
 - Is the personalization connected to the problem?
-- Is there one clear, low-friction ask?
+- Is there one clear primary conversion goal, even if a relevance question and closing invitation both support it?
+- Does it match the requested reference's voice, greeting, service detail, CTA and signature without borrowing unsupported facts?
 
 ---
 
@@ -151,14 +154,9 @@ Before presenting, gut-check:
 
 - Opening with "I hope this email finds you well" or "My name is X and I work at Y"
 - Jargon: "synergy," "leverage," "circle back," "best-in-class," "leading provider"
-- Feature dumps. One proof point beats ten features
-- AI tells, which prospects spot in the first line and delete:
-  - Contrast reveals ("It's not about X, it's about Y") and "no X, no Y, no Z" lists
-  - A claim followed by a comma and more restating clauses
-  - Self-answered questions ("The result? 40% more meetings.") and colon reveals. A real question you want them to answer is fine
-  - Stock phrases: "Here's the thing," "I'll be honest," "Quick question" as an opener, "Say goodbye to," "Unlock," "Take it to the next level"
-  - Em dashes
-- HTML, images, or multiple marketing links; required unsubscribe links and headers must remain intact
+- Unfocused feature dumps; keep the related services needed to explain the offer rather than replacing them with invented proof
+- Mechanical or exaggerated phrasing: repetitive contrast reveals, empty hype, self-answered questions and restated clauses. Review these in context rather than enforcing a phrase blacklist. "Quick question" and em dashes are allowed when they fit the requested voice; never promise they improve or harm delivery on their own
+- Unnecessary images, complex HTML or unrelated promotional links. A requested approved website in the signature is allowed, including first touch; preserve required unsubscribe links and headers. A bare "Unsubscribe" label is not a working unsubscribe mechanism
 - Fake "Re:" or "Fwd:" subject lines
 - Identical templates with only `[FNAME]` swapped
 - Asking for 30-minute calls in first touch

@@ -31,7 +31,7 @@ Flag known audience/eligibility problems and reported delivery errors for operat
 | Offer | Is the next step worth their time? | Offer a useful finding, sample, or answer before a meeting |
 | Hook | Is there a reason to open and read now? | Short internal-looking subject plus one specific observation |
 | Proof and CTA | Is the claim credible and the reply easy? | One approved proof point and one low-friction question |
-| Copy | Is the value obvious at a glance? | Start around 25–75 body words, plain language, one idea; exclude required footer text from that target |
+| Copy | Is the offer clear at a glance? | Match the requested example and retain useful service detail; short notes and fuller service introductions both fit. No universal word target; exclude required footer text |
 | Follow-up | Does the next touch add a reason to respond? | New angle, proof, or resource, not a reminder that you emailed |
 | Timing | Does the message arrive in a sensible window? | Start in recipient-local business hours and compare cohorts |
 
@@ -53,8 +53,8 @@ Segment by the problem and buying situation, not just industry labels. For examp
 
 ## Common Mistakes
 
-1. **Too long** — Start around 25–75 body words; remove filler before cutting useful specificity
-2. **Too self-focused** — "We are a leading..." signals sales pitch. Count I/We sentences
+1. **Wrong length for the task** — Remove filler without cutting the service explanation or padding to a word target; follow the requested reference
+2. **Empty self-promotion** — Replace "We are a leading..." with a clear service and benefit; a factual company introduction and natural I/we language are allowed
 3. **No clear value prop** — Connect the offer to a relevant recipient problem
 4. **Generic templates** — `[FNAME]` isn't personalization. Recipients detect generic copy quickly
 5. **Feature dumping** — "Great reps lead with problems" (Lavender). One proof point beats ten features

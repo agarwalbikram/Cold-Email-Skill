@@ -4,12 +4,13 @@ This skill writes brand-specific cold emails and sequences, creates/schedules ap
 
 ## Review the copy before presenting it
 
-- Match the selected brand, audience, offer, language and requested format. Lead with a relevant problem or benefit, not a company introduction.
+- Match the selected brand, audience, offer, language and requested format. When the operator supplies a style example, preserve its greeting, tone, structure, service detail and signature unless they conflict with factual accuracy or safety. A recipient-goal question followed by a company introduction is valid; do not force a teaser or a researched trigger.
 - Use a short, honest subject and an opening that delivers on it. Avoid fake Re:/Fwd:, account warnings, invented prior contact and misleading sender names.
-- Use plain language, one useful idea and one clear CTA. For B2B cold first touches, start around 25–75 body words; required footer/disclosures are separate. Permission-based promotions can use an approved offer link and appropriate promotional wording under [campaign-modes.md](campaign-modes.md).
+- Use plain language and one primary conversion goal. Follow the requested detail/length: a service-led email may need roughly 90–140 body words, but neither that range nor an ultra-short target is mandatory. An opening relevance question and closing audit CTA may share one goal. A signature website and opt-out do not count as additional sales asks. Preserve appropriate promotional links under [campaign-modes.md](campaign-modes.md).
 - Remove filler, repeated pitches, excessive capitals/punctuation, fabricated urgency and unsupported guarantees. Words such as "free", "discount" and accurate prices are not automatically banned; review meaning and evidence, not an arbitrary keyword score.
+- "Quick question", em dashes, a truthful free audit and a direct company/service introduction are allowed when they fit the requested voice. Judge clarity and accuracy rather than isolated words or punctuation.
 - Never disguise words with symbols, invisible characters or random spintax to evade filters. No wording guarantees inbox placement or an open-rate lift.
-- Keep sender identity, affiliate disclosures, truthful terms, postal address and required opt-out/unsubscribe content intact. Avoid shorteners and unnecessary links or attachments; do not remove compliance links.
+- Keep sender identity, affiliate disclosures, truthful terms, postal address and required opt-out/unsubscribe content intact. Allow the operator-approved website in a signature, including first touch. Avoid shorteners and unnecessary links/attachments; do not remove compliance links. "Reply no and I won't follow up" requires supported stop handling before scheduling; a standalone "Unsubscribe" label must become a working supported unsubscribe mechanism, never an invented URL.
 - Preview available MailWizz fields and missing-value fallbacks before scheduling. Never send unresolved tags, editorial notes or invented recipient facts.
 - Each follow-up adds a new relevant angle, fact or resource; stop rules remain part of the approved sequence.
 

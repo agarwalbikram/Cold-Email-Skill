@@ -1,12 +1,12 @@
 # Personalization at Scale
 
-Make the recipient feel the email was meant for them: connect one specific business observation to a problem your offer solves. A useful implication beats a decorative compliment. Put the signal in the opener and move quickly to why it matters.
+Make the email relevant to the recipient's business goal. A greeting and a brand-growth question can fit a service-led reference without account research. Use a verified observation when available and useful, not as a mandatory opener; follow the requested example rather than manufacturing a signal.
 
 ## Four Levels of Personalization
 
 ### Level 1 — Basic (merge tags)
 
-First name, company name, job title. Useful for a natural greeting, but not a reason to reply. Add a role-specific problem or business trigger rather than stopping at merge fields.
+First name, company name, job title. Useful for a natural greeting, but not a reason to reply alone. Connect the offer to a relevant role or brand goal; a research trigger is optional. Use the exact verified list fields, not the example's editorial placeholders.
 
 ### Level 2 — Industry/segment
 

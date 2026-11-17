@@ -2,6 +2,8 @@
 
 Use these as thinking structures, not text to copy. Choose for the selected brand, audience, offer, evidence and campaign mode; no framework is the default or guaranteed to perform. Use fewer steps or write freeform when that makes the email clearer.
 
+An operator-requested style example takes priority over these patterns for voice, greeting, length, service detail, CTA and signature. Do not replace a service-led introduction with a sample-offer teaser just because the examples below are short. Use only supported facts and verified fields; style never overrides safety or approval.
+
 ## Evidence and mode first
 
 - Examples are fictional teaching scenarios, not client facts. Each scenario names the facts it assumes; use equivalent facts only when supplied or verified for the selected brand. Never copy its observation, capability or customer story into another client's email as evidence.
@@ -9,6 +11,28 @@ Use these as thinking structures, not text to copy. Choose for the selected bran
 - A verified trigger must connect to the offer. Without one, use honest segment-level relevance instead of flattery or invented research. Never infer sensitive personal circumstances.
 - For B2B cold first touches, prefer one low-friction reply CTA. Permission-based promotions may use one approved offer-link CTA and accurate offer-led subjects; preserve affiliate identity, disclosures and terms under [campaign-modes.md](campaign-modes.md).
 - The quoted examples show body cores, not complete send-ready messages. Add the selected sender's required signature, postal address, disclosures and opt-out/unsubscribe content. No recipient tags or editorial placeholders are needed in these examples; actual MailWizz tags still require validation.
+
+## Service-led introduction
+
+**Structure:** Greeting → Recipient-goal question → Company and related services → Practical benefit → One invitation → Signature and opt-out.
+**Use when:** The operator wants friendly, direct marketing copy explaining a service bundle. One opening question and a closing audit invitation can share a single conversion goal. A requested website in the signature is informational, not a reason to reject the structure.
+
+Scenario: a fictional wholesale agency's approved services include retail-buyer outreach/follow-up, Faire and RangeMe management, B2B ordering and a free wholesale audit. No customer results or recipient-specific research exist. Brand and sender identifiers below are fictional scenario facts, not reusable client evidence.
+> Hi,
+>
+> Quick question — are you looking to get your products into more retail stores?
+>
+> At Harbor Wholesale, we help product brands reach retail buyers and handle sales outreach and follow-up.
+>
+> We also manage Faire, RangeMe and B2B ordering, so you have support across buyer outreach and ordering while you focus on your products.
+>
+> Would you be open to a free wholesale audit to review your current setup and explore retail opportunities?
+>
+> Best,
+> Morgan
+> Harbor Wholesale
+
+Use the actual approved sender/site details and working unsubscribe mechanism when composing a campaign; do not copy these fictional identifiers or invent a website. Map a requested personal greeting or recipient-brand field only after verifying the list fields. If reply-based opt-out handling is unsupported, do not promise that replying "no" stops follow-ups; flag the blocker outside the draft.
 
 ## PAS — Problem, Agitate, Solution
 

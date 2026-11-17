@@ -92,12 +92,10 @@
     },
     {
       "prompt": "Write a cold email to a VP of Finance at a 200-person company pitching our expense-report tool.",
-      "expected_output": "Should write a short peer-style cold email following the skill's principles and avoid AI tells: no contrast reveals ('It's not about X, it's about Y'), no 'no X, no Y, no Z' lists, no self-answered questions ('The result?'), no 'Here's the thing' or 'Quick question' opener, no em dashes. One low-friction ask.",
+      "expected_output": "Should write a clear, concise cold email following the requested or saved brand style. Avoid mechanical, repetitive or empty uses of canned openings, contrast reveals, negation lists and self-answered questions; judge wording and punctuation in context rather than banning those forms. Quick question and em dashes are allowed when natural. Keep one primary low-friction conversion goal.",
       "assertions": [
-        "No contrast reveal or negation list",
-        "No self-answered question",
-        "No 'Here's the thing' / 'Quick question' opener",
-        "No em dashes",
+        "Avoids mechanical, repetitive or empty phrasing without treating contrasts, lists or question forms as automatic failures",
+        "Uses 'Quick question' or an em dash only if natural and suited to the requested or saved style",
         "One low-friction ask"
       ],
       "files": [],
@@ -410,6 +408,34 @@
         "Uses one offer-appropriate CTA rather than forcing a meeting or reply-first CTA",
         "Uses only the accessible approved destination or reports it unavailable outside the body",
         "Omits unsupported framework stages and makes no remote changes"
+      ],
+      "files": []
+    },
+    {
+      "id": 43,
+      "prompt": "For this draft only, use this supplied Get Wholesale Orders example as the style reference: 'Hi [First Name], Quick question — are you looking to get [Brand Name] into more retail stores? At Get Wholesale Orders ...' Write one cold email for Get Wholesale Orders. Verified services: retail-buyer outreach and follow-up; Faire/RangeMe management; B2B ordering; free wholesale audit. The selected MailWizz list confirms the FNAME field exists and renders as [FNAME]. The recipient's brand is confirmed as Riverstone Goods; no recipient-brand merge field is available. Our approved signature website is https://getwholesaleorders.example. No performance evidence, guarantees, customer results, or testimonials are available. Draft only.",
+      "expected_output": "Follow the supplied example's service-led, conversational style and moderate explanatory detail rather than compressing it into a teaser. Preserve the verified services and free audit offer. An opening relevance question and closing audit invitation may support the same reply goal. Map the greeting to verified [FNAME] and replace the editorial [Brand Name] with the known literal Riverstone Goods, not an invented field. Include the approved website as informational signature content, not a second conversion CTA. Do not invent proof, guarantees, sender details, address or unsubscribe URL. Flag missing send-ready details outside the body. This example applies to this draft only; do not persist style or send.",
+      "assertions": [
+        "Uses a natural, service-led email with enough explanation to describe the verified services, rather than a teaser that withholds the offer",
+        "Preserves the verified retail-buyer outreach/follow-up, Faire/RangeMe management, B2B ordering, and free wholesale audit without adding services",
+        "Allows an opening question and audit CTA to serve the same reply-conversion goal",
+        "Uses only the verified [FNAME] field for the supplied first name and the verified Riverstone Goods brand name",
+        "Includes the approved website only as informational signature content, not an extra CTA",
+        "Makes no unsupported results, proof, testimonial, or guarantee claims",
+        "Does not save the example's style as a permanent preference and does not send"
+      ],
+      "files": []
+    },
+    {
+      "id": 44,
+      "prompt": "Use the Get Wholesale Orders example I supplied earlier as inspiration for this one cold email for Riverstone Goods. The example claimed guaranteed placement in 500 stores and quoted a retailer testimonial. Those claims are not verified for us. No other style preference is saved. Draft only; I have not asked you to make this style permanent.",
+      "expected_output": "May follow the example's general service-led structure, but must not copy or imply its unsupported store-placement guarantee or testimonial. Do not treat a one-time example as a persistent brand-style instruction; use the current request and existing verified preferences only. Ask for confirmed service/offer facts if they are not available in the current context or saved verified brand profile, rather than inventing them. No send or persistent preference update.",
+      "assertions": [
+        "Does not copy or imply the unverified placement guarantee",
+        "Does not copy, paraphrase, or fabricate the retailer testimonial",
+        "Uses style/structure only and does not treat the example as verified brand evidence",
+        "Does not persist the example's style without explicit instruction",
+        "Does not invent missing services, offer facts, or send"
       ],
       "files": []
     }
