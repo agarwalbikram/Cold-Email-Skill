@@ -1,6 +1,6 @@
 # Cold Email Copywriting Frameworks
 
-Frameworks beat templates — they teach thinking patterns, not copy-paste shortcuts.
+Frameworks beat templates — they teach thinking patterns, not copy-paste shortcuts. Examples below are hypothetical, not approved client claims. Replace editorial placeholders with sourced facts and validate every MailWizz tag before producing sendable copy. These frameworks default to B2B cold email; see [campaign-modes.md](campaign-modes.md) for permission-based promotions.
 
 ## PAS — Problem, Agitate, Solution (default)
 
@@ -28,7 +28,7 @@ Frameworks beat templates — they teach thinking patterns, not copy-paste short
 **Structure:** Hook/stat → Address specific challenge → Social proof/outcome → Clear CTA.
 **Best for:** Data-driven prospects, high-ticket pitches with strong stats.
 
-> Companies in pharma lose 30% of leads due to manual outreach. Given {{Company}}'s growth this quarter, pipeline velocity is likely top of mind. Customers like Pfizer use our platform to automate lead qualification and cut time-to-contact by 60%. Worth a 15-minute call?
+> Companies in pharma lose 30% of leads due to manual outreach. Given [COMPANY]'s growth this quarter, pipeline velocity is likely top of mind. Customers like Pfizer use our platform to automate lead qualification and cut time-to-contact by 60%. Worth a 15-minute call?
 
 ## PPP — Praise, Picture, Push
 
@@ -42,7 +42,7 @@ Frameworks beat templates — they teach thinking patterns, not copy-paste short
 **Structure:** Introduce character (customer) → Tell challenge narrative → Reveal results.
 **Best for:** Strong customer success stories. Humanizes the pitch.
 
-> Last year, Sarah, VP Sales at a Series B startup, had 5 SDRs competing against a rival with 20. Her team was getting crushed on volume. They adopted our AI prospecting tool and sent hyper-personalized emails at 3x pace without losing quality. Within 90 days, they booked more meetings than their competitor's entire team. Happy to share how this could work for {{Company}}.
+> Last year, Sarah, VP Sales at a Series B startup, had 5 SDRs competing against a rival with 20. Her team was getting crushed on volume. They adopted our AI prospecting tool and sent hyper-personalized emails at 3x pace without losing quality. Within 90 days, they booked more meetings than their competitor's entire team. Happy to share how this could work for [COMPANY].
 
 ## SCQ — Situation, Complication, Question
 
@@ -77,7 +77,7 @@ Frameworks beat templates — they teach thinking patterns, not copy-paste short
 **Structure:** Trigger/Pain → Solution hint → Binary CTA. 1–3 sentences, no intro.
 **Best for:** High-velocity SDR teams. Mobile-optimized. Deliberately polarizing.
 
-Spend max 1 minute on personalization. Use industry/persona-level signals. For top-tier prospects, quote their own words from interviews — they almost always respond.
+Time-box the opener to about one minute when using a known industry/persona signal. For strategic prospects, quote a relevant line from a real interview and connect it directly to the problem. Keep the complete email to 1–3 sentences, with a binary interest question rather than a heavy meeting request.
 
 ## Vanilla Ice Cream (Lavender)
 

@@ -1,29 +1,26 @@
 # Follow-Up Sequences
 
-The first email draws most replies (about 58% in Instantly's 2026 benchmark), but the remaining ~42% arrive on follow-ups. A sequence that stops after one send gives up nearly half its replies.
+Do not make the first email do all the work. Follow-ups catch different timing windows and let you introduce a fresh reason to reply: a useful observation, proof point, or small resource. Silence calls for a better angle, not the same pitch repeated louder.
 
 ## How Many: 3–5 Total Emails
 
-- Highest single-email reply rate: **8.4%** (Belkins).
-- 4–7 email campaigns achieve **27% reply rates** vs 9% for 1–3 emails (Woodpecker, 20M emails).
-- By 4th follow-up, response rates drop **55%** and spam complaints **triple**.
-- Resolution: longer sequences catch different timing windows. Cap at 4 follow-ups (5 total emails). Each must add genuinely new value.
+- Start with three total emails; extend to five when you have more substantive angles. Make each follow-up shorter and easier to answer. Put the breakup on the final planned touch, whether that is email 3 or email 5.
 
-## Optimal Cadence
+Stop automated follow-ups immediately on any reply. Suppress opt-outs and hard bounces across all cold email campaigns, including future imports; see [reply-handling.md](reply-handling.md).
+
+## Starting Cadence
 
 Increase the gap between each touch:
 
 | Touch         | Day   | Notes                                          |
 | ------------- | ----- | ---------------------------------------------- |
 | Initial email | 0     | Maximum personalization investment             |
-| Follow-up 1   | 3     | Waiting 3 days increases response by up to 31% |
-| Follow-up 2   | 7–8   | Different angle                                |
+| Follow-up 1   | 3     | Allow time to respond                          |
+| Follow-up 2   | 7     | Different angle; breakup if ending at 3 emails |
 | Follow-up 3   | 14    | New value piece                                |
 | Follow-up 4   | 21–28 | Breakup email                                  |
 
-**Best days:** Tuesday–Thursday (Thursday peaks at 6.87% reply rate).
-**Best times:** 9–11 AM or 1–3 PM in prospect's local time.
-**Avoid:** Monday mornings (inbox overload), Friday afternoons (checked out).
+Start Tuesday–Thursday around 9–11 AM or 1–3 PM in the prospect's local time, within the approved sending window. Avoid Monday inbox catch-up and late-Friday sends as an initial default. Adjust for the audience's work pattern and observed replies; timing should support a strong message, not substitute for one.
 
 ## Angle Rotation
 
@@ -41,7 +38,7 @@ Add only **one new value proposition per email** (SalesBread). This naturally fo
 
 ## The Breakup Email
 
-Leverages loss aversion — removing pressure while creating scarcity through withdrawal. Close.com reports **10–15% response rates** from breakup emails with cold prospects.
+Use the final touch to close the loop and remove pressure. Making the choice easy can prompt a decision: send the resource, revisit later, or stop. The willingness to walk away should be real, not invented scarcity.
 
 **Structure:**
 
@@ -62,11 +59,11 @@ Leverages loss aversion — removing pressure while creating scarcity through wi
 > 2: Not now, check back in 3 months
 > 3: Not interested, please stop
 
-**Critical rule:** If you send a breakup email, honor it. Do not contact the prospect again.
+**Critical rule:** Honor the breakup: no more unsolicited follow-ups. A recipient-requested later contact (such as option 2) may be reviewed and drafted, but sending still requires fresh operation-specific operator approval and applicable consent/provider checks. Never override an opt-out.
 
 ## Phrases That Kill Response Rates
 
-- "I never heard back" → **12% drop** in meeting booking rate (Gong)
+- "I never heard back" → Guilt-tripping, not a reason to respond
 - "Just checking in" → Zero value, signals laziness
 - "Bumping this to the top of your inbox" → Presumptuous
 - "Did you see my last email?" → Guilt-tripping

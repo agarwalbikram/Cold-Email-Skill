@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "registry_revision": 0,
+  "client_id": null,
+  "updated_at": null,
+  "campaign_record_template": {
+    "local_campaign_id": null,
+    "name": null,
+    "version": 1,
+    "record_revision": 0,
+    "client_id": null,
+    "company_id": null,
+    "brand_id": null,
+    "niche_id": null,
+    "offer_id": null,
+    "campaign_mode": null,
+    "profile_revision": null,
+    "source_versions": [],
+    "created_at": null,
+    "updated_at": null,
+    "lifecycle_state": "draft",
+    "output_format": null,
+    "items": [],
+    "selected_item_ids": [],
+    "variant_allocations": [],
+    "sender": {
+      "from_name": null,
+      "from_email": null,
+      "reply_to": null,
+      "postal_address": null,
+      "signature": null
+    },
+    "disclosures": [],
+    "destination_urls": [],
+    "tag_mapping": [],
+    "tracking": {
+      "open_tracking": false,
+      "click_tracking": false
+    },
+    "mailwizz": {
+      "connection_reference": null,
+      "instance_url": null,
+      "account_reference": null,
+      "campaign_type": null,
+      "list_uid": null,
+      "segment_uid": null,
+      "segment_choice_confirmed": false,
+      "audience_count": null,
+      "audience_snapshot_reference": null,
+      "delivery_server_selection": "unselected",
+      "delivery_server_uids": [],
+      "delivery_server_selection_verified_at": null,
+      "remote_campaigns": []
+    },
+    "schedule": {
+      "timezone": null,
+      "mailwizz_account_timezone": null,
+      "absolute_item_times": [],
+      "send_window_end": null,
+      "offer_expiry": null,
+      "maximum_sends_per_day": null,
+      "maximum_recipients": null,
+      "autoresponder": {
+        "event": null,
+        "delay_value": null,
+        "delay_unit": null,
+        "reference_campaign_uid": null,
+        "reference_campaign_numeric_id": null,
+        "enrollment_scope": null,
+        "eligibility_rules": [],
+        "eligibility_boundary_reference": null,
+        "activation_at": null,
+        "activation_end_at": null,
+        "maximum_enrollments": null,
+        "existing_contacts_behavior": null,
+        "repeat_behavior": null,
+        "stop_rules": [],
+        "cutoff_enforcement_reference": null
+      }
+    },
+    "checks": [],
+    "approval": {
+      "status": "pending",
+      "approved_version": null,
+      "operator_identity_reference": null,
+      "host_event_reference": null,
+      "approved_at": null,
+      "approved_material_digest": null,
+      "approved_item_ids": [],
+      "approved_schedule_or_trigger_reference": null
+    },
+    "execution": {
+      "last_checked_at": null,
+      "last_error": null,
+      "pending_reconciliation": false
+    },
+    "history": [],
+    "statistics_snapshots": []
+  },
+  "campaigns": []
+}
