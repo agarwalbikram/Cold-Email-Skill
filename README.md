@@ -39,9 +39,15 @@ Use only the command matching your host. Add `--global` if you intentionally wan
 Install Bikram Cold Email Skill (bikram-cold-email-skill) from https://github.com/agarwalbikram/Cold-Email-Skill.
 Read its README and Skill_Agents.md first. Use the Skills CLI from my private bot project, selecting
 only bikram-cold-email-skill and your actual agent host. Preserve any existing skill and client
-data; report a name conflict rather than overwriting it. Verify the installed
-skill is discoverable, then invoke bikram-cold-email-skill by name. Follow its workspace and
-agent policy references. Do not install MailWizz, add credentials, or send email.
+data; report a name conflict rather than overwriting it. Configure this dedicated
+bot's persistent host instructions to load Skill_Agents.md (or merge its bot
+instructions), resolving references from the installed skill directory. Preserve
+unrelated host instructions. Verify discovery, then open a fresh conversation
+with only "Hi" and confirm the skill loads and asks for client/first company
+without writing invented facts or sending. Record the host configuration and
+observed result; reading this file once is not persistent setup. If host access
+or fresh-session verification is unavailable, report greeting setup as unverified.
+Do not install MailWizz, add credentials, or send email.
 ```
 
 The bot needs shell/file access and an Agent Skills-compatible host. An ordinary chat window can read instructions but cannot install files or provide persistent memory by itself. No single command makes every LLM platform discover skills.
@@ -74,6 +80,8 @@ send, schedule, activate, or test-send without exact operation/version approval.
 ```
 
 The repository's [Skill_Agents.md](Skill_Agents.md) routes by this same skill name and requires the complete client bot policy. The full runtime policy is also bundled inside the skill so it survives installation without relying on repository-root files. If copying Skill_Agents.md into a separate bot project, resolve its policy/workspace links from the installed `bikram-cold-email-skill` directory, not from the bot project's root.
+
+Verify the host loads these instructions again in a fresh conversation with only **“Hi”**, without manually naming the skill. Use an empty synthetic private workspace for the check: expect a small client/first-company question batch, no invented saved facts, and no sending. Skill-file discovery and a one-time instruction read do not prove greeting activation. Do not claim this setup complete unless the actual host's persistent configuration and fresh-session behavior were observed.
 
 ## First use and JSON files
 
@@ -117,7 +125,7 @@ skills/
       evals.json                  # Behavioral evaluation prompts and expectations
 ```
 
-`evals/evals.json` is an evaluation dataset, not an automated test runner. `.projectmem/` is local maintainer memory, not a runtime dependency or part of the installed skill. The writing references originated from [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills/tree/main/skills/cold-email); this repository adds dedicated-client memory, bot routing, and MailWizz workflows.
+`evals/evals.json` is an evaluation dataset, not an automated test runner. It contains 42 cases, including five [file-backed persistence scenarios](skills/bikram-cold-email-skill/evals/README.md) and no-customer-proof/affiliate-writing cases. Fixture presence is not evidence that a bot passed them. `.projectmem/` is local maintainer memory, not a runtime dependency or part of the installed skill. The writing references originated from [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills/tree/main/skills/cold-email); this repository adds dedicated-client memory, bot routing, MailWizz workflows and [grounded framework examples](skills/bikram-cold-email-skill/references/frameworks.md) selected by audience, offer, evidence and campaign mode, without a default framework.
 
 ## Updating
 

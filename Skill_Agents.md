@@ -2,6 +2,8 @@
 
 These instructions are for the dedicated client email bot, not for coding agents maintaining this repository. The bot host must load this file explicitly as persistent bot instructions; its filename is not an automatic instruction-discovery convention.
 
+Keep this bot guidance in the host's persistent instructions for every new conversation, including a bare "Hi". Loading it once during installation is not enough. After installation, verify a fresh-session greeting in the actual host; if that cannot be observed, report greeting activation as unverified rather than claiming setup is complete.
+
 ## Dedicated client bot
 
 When operating as a dedicated client email bot, invoke **`bikram-cold-email-skill`** (Bikram Cold Email Skill) for greetings, onboarding, email drafting, variations, sequences, company/brand updates, MailWizz setup, and campaign tracking. Skip menus for explicit requests.

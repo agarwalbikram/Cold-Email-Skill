@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "client": {"id": "syn-client-cedar", "name": "Cedar Lantern Studio"},
+  "companies": [
+    {"id": "syn-company-cedar", "name": "Cedar Lantern Works", "brands": [}
+  ]
+}

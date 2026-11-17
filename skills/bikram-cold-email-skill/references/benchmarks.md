@@ -6,13 +6,16 @@ Use benchmarks to set a starting hypothesis, then compare against your own campa
 
 | Metric | How to use it |
 |--------|---------------|
+| Open rate | Use available provider-defined unique/total opens and its denominator; privacy prefetches mean this is not a verified human-read rate |
+| Click rate | State unique/total clicks and whether the denominator is sent, delivered or opens; scanners can generate events, and clicks are not purchases |
+| Unsubscribe rate | State the reporting window and provider denominator; compare audience expectations, relevance and frequency |
 | Reply rate | Report replies divided by delivered messages, identifying auto-replies and the observation window |
 | Positive reply rate | Report the classification rule and denominator separately from all replies |
 | Meetings booked | Distinguish bookings from attended meetings; use contacts as the denominator when reporting contact conversion |
-| Bounce rate | This skill's conservative operating targets are under 2%, preferably under 1%; apply stricter provider limits |
+| Bounce rate | Report available hard/soft breakdown, window and denominator; compare the client's baseline and provider limits, and flag deterioration for operator review |
 | Spam complaints | Google recommends below 0.1% and avoiding 0.3%; see [sender guidelines](https://support.google.com/mail/answer/81126?hl=en) |
 
-**Optimize the whole funnel.** Subjects win opens, bodies earn replies, and the offer earns meetings. Keep open/click tracking off because automated fetches distort it; compare positive replies and meetings without losing focus on writing subjects people want to open.
+**Optimize the whole funnel.** Subjects win attention, bodies explain value, and the CTA invites the next step. Use opens/clicks when available without mistaking automated events for people. Preserve approved tracking settings; include verified replies or conversions when available and never invent them.
 
 ## Illustrative Funnel Model
 
@@ -20,7 +23,7 @@ Hypothetical arithmetic, not a benchmark: 1,000 contacts → 30 replies → 10 p
 
 ## Performance Levers to Test
 
-Fix delivery and eligibility problems first. Then use this practical troubleshooting order, not a claimed statistical ranking:
+Flag known audience/eligibility problems and reported delivery errors for operator review. Do not diagnose inbox placement or require infrastructure audits. Then use this troubleshooting order as hypotheses, not a claimed statistical ranking:
 
 | Priority | What to improve | Starting tactic |
 |----------|-----------------|-----------------|

@@ -59,4 +59,4 @@ Use a verified `[COMPANY_INITIATIVE]` field or literal project reference when av
 
 When variants are requested, test different reasons to open: problem vs initiative vs curiosity. Keep the audience, body, and timing comparable so you can interpret the difference. Supply usable subjects first, then a short explanation of each angle; do not replace requested copy with a tracking or compliance lecture.
 
-Keep open/click tracking off under this skill's sending policy. That changes measurement, not the subject's purpose: choose the winner using positive replies and meetings with stated denominators and enough observation time, rather than treating tracked opens as ground truth.
+Use approved tracking settings and actual available metrics; do not change them for a report. Opens may include privacy prefetches and clicks may include scanners. Compare subjects using comparable cohorts and observation windows; identify unique versus total events and rate denominators. Include positive replies or conversions only when verified, and never promise an open-rate lift.

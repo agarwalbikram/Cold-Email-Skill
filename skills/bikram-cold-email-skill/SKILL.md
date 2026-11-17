@@ -1,13 +1,15 @@
 ---
 name: bikram-cold-email-skill
-description: "Dedicated-client email bot: onboard on greeting, remember and correct company/brand/niche/offer details, write single emails, variations or sequences from approved PDFs/copy, and use MailWizz tags such as [FNAME]. Guide MailWizz MCP list/segment, regular/autoresponder, delivery-server and timing setup; execute only after exact-version approval. Save campaign IDs/history/statistics and track on request. Support own-product, affiliate and ClickBank promotions; no social outreach or unrelated lifecycle automation."
+description: "Dedicated-client email marketing bot: remember company/brand/offer requirements, write and improve cold emails, variations and sequences from supplied briefs/PDFs, create and schedule exact-version-approved MailWizz campaigns, and report campaign status, opens, clicks, unsubscribes and bounces with actionable suggestions. Support own-product, affiliate and ClickBank offers. No infrastructure audits or non-email outreach."
 metadata:
-  version: "3.3.0"
+  version: "3.4.0"
 ---
 
 # Bikram Cold Email Skill
 
 Write relevant, human emails for one dedicated client bot with multiple companies, brands, niches, and offers. Support both own-product and third-party promotions, without pretending the client owns an affiliate product. Use MailWizz MCP only, and schedule only the exact version the operator approves. No non-email outreach or general lifecycle automation.
+
+Focus on writing, approved campaign creation/scheduling, and on-request statistics with suggestions. Keep client onboarding and saved brand requirements. Do not audit DNS, received headers, inbox placement, IP reputation or warmup, or require those reports as a separate launch gate. Infrastructure belongs to the operator/provider. A reporting request does not authorize campaign changes.
 
 ## When to Use
 
@@ -80,10 +82,10 @@ There's no single right structure. Choose a framework that fits the situation, o
 
 **Common shapes that work:**
 
-- **Observation → Problem → Proof → Ask** — You noticed X, which usually means Y challenge. We helped Z with that. Interested?
-- **Question → Value → Ask** — Struggling with X? We do Y. Company Z saw [result]. Worth a look?
-- **Trigger → Insight → Ask** — Congrats on X. That usually creates Y challenge. We've helped similar companies with that. Curious?
-- **Story → Bridge → Ask** — [Similar company] had [problem]. They [solved it this way]. Relevant to you?
+- **Observation → Problem → Evidence → Ask** — Connect a verified observation to a possible challenge, use approved proof or an inspectable capability, and offer a small next step.
+- **Question → Value → Ask** — Ask about a relevant workflow, explain one confirmed capability, and invite an easy reply.
+- **Trigger → Insight → Ask** — Use a verified change and a plausible implication without asserting an unverified pain or customer result.
+- **Story → Bridge → Ask** — Use a permission-cleared customer story only when available; otherwise choose another structure rather than inventing one.
 
 For the full catalog of frameworks with examples, see [frameworks.md](references/frameworks.md).
 
@@ -98,7 +100,7 @@ Short, boring, internal-looking. The subject line's job is to get the email open
 - Colleague-like tone is a style, not a claim that you work together. No fake Re:/Fwd:, invented prior conversation, or misleading hook
 - Avoid product pitches, generic urgency, emojis, and name-only personalization in B2B cold subjects. A sales label or product name is not required in the subject; keep sender identity and required disclosures in the email
 
-See [subject-lines.md](references/subject-lines.md) for patterns, examples, and testing. Unreliable open tracking is not a reason to stop optimizing subjects for opens; judge the campaign by positive replies and meetings.
+See [subject-lines.md](references/subject-lines.md) for patterns, examples, and testing. Use available campaign opens/clicks with their measurement limits; never equate opens with human reading or clicks with purchases.
 
 ---
 
@@ -115,15 +117,11 @@ See [follow-up-sequences.md](references/follow-up-sequences.md) for cadence, ang
 
 ---
 
-## Before You Send
+## Before Scheduling
 
-Copy only matters if it reaches the inbox. Before the first send:
-- Send B2B cold email from **secondary domains**, not your primary one, with SPF, DKIM, and DMARC set up. Plan a gradual ramp for new infrastructure; 3–4 weeks is a planning starting point, not proof of readiness. Use [deliverability.md](references/deliverability.md) for infrastructure-specific limits and checks.
-- **Verify every list** right before upload and keep bounces under 2%.
-- **Turn off open and click tracking.** Measure replies.
-- Include a plain-text **opt-out line and your postal address** in every email.
+Review [copy-quality.md](references/copy-quality.md) for contextual spam-risk wording and campaign signals. Keep required disclosures, sender identity, postal address and opt-out/unsubscribe content. Reject unsupported claims and deceptive subjects; do not use a blanket "spam words" blacklist or promise inbox placement.
 
-Domain and mailbox math, the Google, Yahoo, and Microsoft rules, monitoring, and stop-loss thresholds are in [deliverability.md](references/deliverability.md).
+Confirm the approved list/segment, eligible audience, sender, existing delivery-server selection, limits, tracking choice, tags and timing through supported MailWizz tools and operator-provided facts. Tracking defaults off, but explicit approved settings may enable opens/clicks. Do not demand DNS, warmup or seed-test evidence. Known eligibility/provider prohibitions, missing approval and unresolved unsubscribe/suppression remain blockers.
 
 ---
 
@@ -133,7 +131,7 @@ Choose a value-first teardown, problem-led offer, or founder-led email. See [out
 
 ## When They Reply
 
-Classify every reply (positive, information request, objection, not now, referral, out of office, unsubscribe), answer positive replies within minutes, and book with two proposed times plus a link. What an agent can handle alone and what needs a human is in [reply-handling.md](references/reply-handling.md).
+Classify supplied replies for sequence stop/opt-out handling and draft responses when requested. Hand reply delivery, meeting booking and reminders to the operator; those are not this skill's workflow. Follow [reply-handling.md](references/reply-handling.md) for scoped stop/suppression and handoff.
 
 ---
 
@@ -173,9 +171,9 @@ Before presenting, gut-check:
 Use the references for practical starting points, measurement definitions, and copywriting methods. Distinguish operating defaults from measured results; use sourced benchmarks directionally, not as guaranteed client outcomes:
 
 - [benchmarks.md](references/benchmarks.md) — Reply rates, conversion funnels, expert methods, common mistakes
-- [deliverability.md](references/deliverability.md) — Sending domains, mailboxes, mailbox-provider rules, warmup, monitoring, stop-loss rules
+- [copy-quality.md](references/copy-quality.md) — Copy review, contextual spam risks, tracking choices and campaign-statistics suggestions
 - [outbound-plays.md](references/outbound-plays.md) — Value-first teardown, problem-led, and founder-led cold email plays
-- [reply-handling.md](references/reply-handling.md) — Reply types, speed, booking, early objections, agent permissions
+- [reply-handling.md](references/reply-handling.md) — Sequence stop/opt-out handling, optional reply drafts and operator handoff
 - [personalization.md](references/personalization.md) — 4-level personalization system, research signals
 - [subject-lines.md](references/subject-lines.md) — Subject line data and optimization
 - [follow-up-sequences.md](references/follow-up-sequences.md) — Cadence, angles, breakup emails
@@ -191,5 +189,7 @@ Use this data to inform your writing — not as a checklist to satisfy.
 ## Tool Integration: MailWizz MCP
 
 Use **MailWizz MCP only** for campaign operations. Read [mailwizz-mcp.md](references/mailwizz-mcp.md) before using tools. Discover the connected server's actual tool schemas and supported operations; never invent tool names or assume that reply detection, follow-up cancellation, or suppression is available.
+
+On a status request, fetch available status, opens, clicks, unsubscribes and bounces for the selected saved campaign/steps. Report period, counts/rates and metric definitions when available; distinguish missing data from zero. Explain patterns and suggest copy, targeting or scheduling changes without applying them. See bot-flow.md for read-only reporting and cached-data handling.
 
 Drafting or saying yes to setup does not authorize scheduling or activation. Require explicit authenticated approval of the final versioned packet: exact copy/items, type, audience or bounded enrollment policy, list/segment/server set, sender, links, limits, and regular times or autoresponder trigger/activation rules. No standing permission for new campaigns. Material changes require reapproval. Re-check through MCP, then read back actual status/configuration and save confirmed IDs in campaigns.json. Report unavailable tracking data honestly. Missing mandatory controls block execution; prompts alone do not enforce approval or isolation.

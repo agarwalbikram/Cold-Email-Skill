@@ -21,7 +21,7 @@
     {
       "id": 2,
       "prompt": "Help me write a cold email to CTOs at enterprise companies. I sell cybersecurity training. My current email has a 2% open rate and 0% reply rate.",
-      "expected_output": "Should diagnose possible deliverability, tracking, subject-line, body, and relevance issues without treating a 2% tracked open rate as proof of a subject-line problem. Should inspect sending setup and measure replies, not optimize tracking pixels. Should provide a concise peer-style rewrite with a 2-4 word subject, technical credibility for enterprise CTOs, a relevant problem, approved proof, and one low-friction CTA. Should explain the changes.",
+      "expected_output": "Should clarify which metrics and observation window are available, and report provided counts/rates with denominator when known. Treat a 2% tracked open rate as weak evidence, not proof of a subject-line or infrastructure problem; qualify possible pixel/bot and measurement limitations. Offer evidence-qualified copy/relevance suggestions and a concise peer-style rewrite with a 2-4 word subject, technical credibility for enterprise CTOs, a relevant problem, approved proof, and one low-friction CTA. Do not perform or require infrastructure checks, change tracking, or claim unavailable metrics.",
       "assertions": [
         "Diagnoses problems from the performance data",
         "Does not infer a subject-line problem from tracked open rate alone",
@@ -68,7 +68,7 @@
     {
       "id": 5,
       "prompt": "What are the best subject lines for cold emails? I want to maximize open rates.",
-      "expected_output": "Should directly help maximize opens with usable short, boring, internal-looking subject lines, usually 2-4 words in lowercase, using problem fragments, current initiatives, or specific curiosity. Explain that the subject wins the open and the body earns the reply. Colleague-like style is allowed; do not require a sales label or product pitch in the subject. The body must deliver on the hook, with no fake Re:/Fwd: or invented prior contact. Provide examples first and concise rationale, not a refusal or a compliance lecture. Mention unreliable tracked opens briefly and evaluate campaign variants using positive replies or meetings; do not claim guaranteed filter bypass or numerical lifts.",
+      "expected_output": "Should directly help maximize opens with usable short, boring, internal-looking subject lines, usually 2-4 words in lowercase, using problem fragments, current initiatives, or specific curiosity. Explain that the subject wins the open and the body earns the reply. Colleague-like style is allowed; do not require a sales label or product pitch in the subject. The body must deliver on the hook, with no fake Re:/Fwd: or invented prior contact. Provide examples first and concise rationale, not a refusal or a compliance lecture. Mention tracked-open limitations briefly, state that missing/disabled tracking is unavailable rather than zero, and evaluate variants using positive replies or meetings. Do not change tracking to obtain metrics or claim guaranteed filter bypass or numerical lifts.",
       "assertions": [
         "Recommends short internal-looking one-to-one subjects with concrete reasons to open",
         "Provides usable problem, initiative, or curiosity examples before caveats",
@@ -106,29 +106,26 @@
     {
       "id": 8,
       "prompt": "We're about to start cold email for our agency. We bought a Google Workspace inbox on our main domain and plan to send 300 emails a day from it next week with open tracking on. Anything we should change?",
-      "expected_output": "Should load the deliverability reference and reject the proposed launch: protect the primary domain, verify sending is permitted by law and provider policy, authenticate authorized secondary domains with SPF, DKIM and aligned DMARC, and keep open/click tracking off. Ramp gradually to engaged consenting recipients within verified provider limits, monitoring deferrals, bounces, complaints and reputation; do not prescribe a universal warmup duration, promise safe cold volume, or multiply mailbox quotas to evade restrictions. Verify the list, use this skill's conservative bounce target below 2% (preferably below 1%), include honest identity, postal address and required unsubscribe mechanisms, and define stop-loss controls. Explain provider-specific rules, including aggregate permanent Gmail bulk status, rather than assuming Yahoo uses Google's threshold.",
+      "expected_output": "Should keep advice within copy quality and the skill's stated scope: it does not audit infrastructure or check DNS, headers, seed inboxes, warmup, blacklist status, or live deliverability, and none is a skill launch gate. Do not assert the proposed launch is safe or unsafe based on unobserved infrastructure evidence. Preserve tracking settings unless an explicit approved change is requested; explain that tracked opens can be noisy and do not establish inbox placement. Offer concise, evidence-qualified feedback on the proposed copy and plan, ask for relevant known constraints only if needed, and defer legal/provider eligibility decisions to verified operator-supplied facts; a known legal or provider prohibition remains a blocker. Do not fabricate limits, metrics, or deliverability evidence.",
       "assertions": [
-        "Says not to send from the primary domain",
-        "Recommends secondary domains with SPF, DKIM and DMARC",
-        "Uses verified provider limits without counting aliases as extra capacity or evading restrictions",
-        "Requires gradual evidence-led ramping without a universal warmup duration or artificial-engagement requirement",
-        "Says to turn off open tracking",
-        "Requires list verification and a bounce limit around 2%",
-        "Includes an opt-out line and postal address",
-        "Gives stop-loss thresholds"
+        "Does not claim to audit or verify infrastructure/deliverability",
+        "Does not make DNS, seed-inbox, warmup, or blacklist checks a launch gate",
+        "Does not declare the proposed sending plan safe without evidence",
+        "Preserves tracking settings absent an explicit approved change",
+        "Explains that tracked opens do not prove inbox placement",
+        "Gives evidence-qualified in-scope copy/campaign suggestions"
       ],
       "files": []
     },
     {
       "id": 9,
       "prompt": "Someone replied to our cold email saying 'interesting, what does this cost?' but our MailWizz follow-up emails are still scheduled. What should happen now?",
-      "expected_output": "Should load reply handling and MailWizz MCP guidance, stop all automated cold email follow-ups for the recipient across lists and campaigns, and confirm queued-send cancellation where supported. If recipient-level stopping is unavailable, pause affected campaigns and require operator exclusion before resuming. Classify as an information request, draft a brief honest pricing answer from approved facts, and propose two meeting times plus an existing approved booking link if appropriate. Respond promptly during business hours with human approval. Log the reply and confirmed stop action using supported fields or request operator logging. Never invent MCP capabilities.",
+      "expected_output": "Should use reply classification and sequence-stopping guidance: stop cold-email follow-ups for the recipient where supported, and confirm queued-send cancellation; if recipient-level stopping is unavailable, pause affected campaigns and require operator exclusion before resuming. Classify as an information request and optionally draft a brief honest pricing response from approved facts for operator review. Do not send, propose meeting times, book, or manage reminders; the operator handles delivery and booking. Log the reply and confirmed stop action using supported fields or request operator logging. Never invent MCP capabilities.",
       "assertions": [
         "Stops all automated cold email follow-ups for the recipient, or pauses affected campaigns if recipient-level stopping is unavailable",
         "Classifies it as an information request",
-        "Answers the question briefly before asking for a meeting",
-        "Proposes two times and an existing approved booking link if appropriate",
-        "Emphasizes responding within minutes",
+        "Optionally drafts a brief approved-facts pricing response for operator review",
+        "Does not send or manage bookings/reminders; operator handles delivery and booking",
         "Logs the reply and confirmed stop action using supported fields or requests operator logging"
       ],
       "files": []
@@ -136,7 +133,7 @@
     {
       "id": 10,
       "prompt": "Use MailWizz MCP to prepare our verified prospect list and email sequence. I have not approved a launch yet. Which tools will you use?",
-      "expected_output": "Should read MailWizz MCP and client workflow references and discover actual schemas before naming operations. Verify the selected client account/resource allowlist, list, campaign, infrastructure, eligibility, and authorization for draft/import changes. Do not invent tool names, install tools, switch integrations, schedule, or send. If MCP is unavailable, draft locally and report unavailable operations. Scheduling requires explicit authenticated operator approval for the exact campaign version and schedule, plus verified safety checks; no standing launch authorization.",
+      "expected_output": "Should read MailWizz MCP and client workflow references and discover actual schemas before naming operations. Verify the selected client account/resource allowlist, list, campaign, and eligibility information available from MCP or supplied by the operator; do not perform or require infrastructure audits/checks. Do not invent tool names, install tools, switch integrations, schedule, or send. If MCP is unavailable, draft locally and report unavailable operations. Scheduling requires explicit authenticated operator approval for the exact campaign version and schedule; no standing launch authorization.",
       "assertions": [
         "Uses MailWizz MCP as the only campaign integration",
         "Discovers actual tool schemas rather than inventing tool names",
@@ -290,6 +287,130 @@
       "prompt": "A prospect replied 'what does it cost?' We have confirmed pricing of $49/month. MailWizz cannot yet confirm the queued follow-ups were stopped. Draft a brief response for review while I arrange the stop; do not send it or resume anything.",
       "expected_output": "Provide a short local pricing response from the confirmed price without waiting for stop confirmation. Separately flag the outstanding follow-up risk and require the authorized stop/pause/escalation path. Do not claim follow-ups stopped, send a response, or resume the sequence. Exact response-send approval remains necessary.",
       "assertions": ["Drafts a useful pricing answer while confirmation is pending", "Reports queued-send risk and required stop or operator escalation", "Does not claim stopping, sending, or resumption occurred"],
+      "files": []
+    },
+    {
+      "id": 31,
+      "prompt": "We are onboarding a new client. I am the verified operator. Client name: Cedar Lantern Studio. First company: Cedar Lantern Works; first brand: Cedar Lantern. Save these confirmed details. Do not create a campaign or send anything.",
+      "expected_output": "Use only the fresh project-local client-data fixtures. Persist the confirmed client and first company/brand with stable IDs and a profile revision; keep the campaign register empty and do not send or schedule.",
+      "assertions": ["Persists client and first company/brand from confirmed facts", "Keeps campaigns array empty", "Does not send, schedule, or claim remote activity", "Preserves approval-required and tracking-off defaults"],
+      "files": ["fixtures/onboarding-profile.json", "fixtures/empty-campaigns.json"]
+    },
+    {
+      "id": 32,
+      "prompt": "Hi again. Read the saved client profile and campaign register, then greet me and offer the appropriate next actions. Do not change either file. There are two brands; do not choose one for me.",
+      "expected_output": "Read the fixture profile/register as existing client data, greet the named client, offer relevant returning-client actions, and ask which brand only if a brand-specific task is requested. Do not pick either brand or write files.",
+      "assertions": ["Reads client and register fixtures", "Recognizes the returning client", "Does not select between the two brands", "Leaves fixture-backed files unchanged"],
+      "files": ["fixtures/two-brand-profile.json", "fixtures/two-brand-campaigns.json"]
+    },
+    {
+      "id": 33,
+      "prompt": "I am the verified operator. Permanently correct Cedar Lantern's Starter offer price from $29/month to $39/month. This applies only to Cedar Lantern's Starter offer; preserve the sibling brand. Save the correction with revision/history. Do not change or send remote campaigns.",
+      "expected_output": "Apply the explicit offer-scoped correction without redundant confirmation, preserve sibling brand facts, add a non-secret change-history entry and increment revision, and leave campaign/remote state untouched. A fresh read must show $39/month.",
+      "assertions": ["Corrects only the selected offer", "Preserves sibling brand and offer", "Adds revision and change history", "Next fresh profile read returns $39/month", "Does not send or mutate a remote campaign"],
+      "files": ["fixtures/two-brand-profile.json", "fixtures/price-correction-campaigns.json"]
+    },
+    {
+      "id": 34,
+      "prompt": "Hi. The existing client profile file is present but malformed. Inspect it and tell me what is wrong. Do not repair, reset, replace, or overwrite it.",
+      "expected_output": "Report that the profile is malformed and do not overwrite it. Preserve the malformed file byte-for-byte; do not substitute a blank template or claim a reset.",
+      "assertions": ["Reports a malformed profile", "Keeps the profile bytes exactly unchanged", "Does not reset or replace the file", "Does not claim successful profile loading"],
+      "files": ["fixtures/malformed-profile.txt"]
+    },
+    {
+      "id": 35,
+      "prompt": "The host reports that an approved campaign was scheduled remotely and returned UID SYNTH-MW-UID-735, but the local campaigns.json post-schedule save failed. Reconcile using the supplied host evidence. Do not create it again or perform another remote mutation.",
+      "expected_output": "Report the known remote UID, last observed scheduled state and local persistence failure, halt further mutations, and require authorized readback of the existing approved remote campaign before retry or register recovery. With no reconciliation tool in this offline scenario, leave the register unchanged and report recovery as blocked. Do not claim live reconciliation or a successful save, and never create a duplicate.",
+      "assertions": ["Reports UID SYNTH-MW-UID-735 and failed local save", "Does not issue duplicate create/schedule", "Requires reconciliation/readback before retry", "Does not claim local persistence succeeded", "No further remote mutation"],
+      "files": ["fixtures/approved-campaign-register.json", "fixtures/post-schedule-save-failure.txt"]
+    },
+    {
+      "id": 36,
+      "prompt": "On request, report this campaign's last 30 days: 8,000 delivered, 120 unique opens, 35 unique clicks, 14 unsubscribes, and 160 bounces. Tell me what it suggests; do not change the campaign.",
+      "expected_output": "Report the supplied metric counts and 30-day window, distinguish delivered denominator from other possible denominators, and calculate rates only against the stated appropriate denominator (or label any assumption). Note that opens/clicks may be affected by pixels, privacy proxies, or bots; the data alone cannot establish inbox placement or cause. Highlight the comparatively high bounce count and low opens as signals for cautious investigation, not proof or a definitive diagnosis. Offer evidence-qualified suggestions and make no campaign or tracking changes.",
+      "assertions": [
+        "Reports all supplied metrics and the 30-day window without changing counts",
+        "States denominator and labels any calculated rates or assumptions",
+        "Treats low opens/high bounces as signals rather than proven causes",
+        "Qualifies opens/clicks for tracking and bot limitations",
+        "Offers cautious evidence-based suggestions without automatic changes"
+      ],
+      "files": []
+    },
+    {
+      "id": 37,
+      "prompt": "Report opens and clicks for this campaign. The connected MCP can read status and unsubscribe/bounce totals, but has no open/click metrics. Tracking is disabled. Do not enable tracking or otherwise change the campaign just to answer.",
+      "expected_output": "Report available status, unsubscribe, and bounce values if present, and say open/click metrics are unavailable/not exposed by MCP and tracking is disabled. Do not report zero opens/clicks or infer that nobody engaged; missing or disabled tracking is not zero. Do not enable tracking or make any campaign change.",
+      "assertions": [
+        "Reports only metrics the MCP exposes",
+        "Labels open/click data unavailable rather than zero",
+        "Does not infer no engagement from disabled/missing tracking",
+        "Does not change tracking or campaign state"
+      ],
+      "files": []
+    },
+    {
+      "id": 38,
+      "prompt": "Show campaign opens, clicks, unsubscribes, bounces, status, and any useful rates, then improve whatever looks weak. The MCP exposes the metrics, but I have not approved changes.",
+      "expected_output": "Provide a read-only report for supported fields, with observation window, counts/rates, and denominator when known, and label unknowns/unavailable data accurately. Give evidence-qualified suggestions, including limitations of open/click tracking, but do not edit copy, settings, tracking, status, schedule, or send. Reporting permission is not change approval; obtain exact operation/version approval before any requested mutation.",
+      "assertions": [
+        "Reports supported metrics with known windows and denominators and labels unknowns",
+        "Provides evidence-qualified suggestions rather than a definitive unsupported diagnosis",
+        "Does not automatically change copy, settings, tracking, or campaign state",
+        "Separates reporting from explicit approval to mutate"
+      ],
+      "files": []
+    },
+    {
+      "id": 39,
+      "prompt": "Review this cold-email copy for spammy language: 'The free plan is $0 for the first month; plans are $29/month after that. Cancel anytime. This is an ad from Acme Labs.' Keep the facts accurate and do not remove required disclosures just to make it sound less promotional.",
+      "expected_output": "Review the actual wording and context, not isolated trigger-word folklore. Accurate free/price/renewal terms and applicable ad/affiliate disclosures are not inherently spammy and should not be hidden or removed. Suggest only contextual improvements to clarity, relevance, and non-deceptive phrasing while preserving substantiated price details and required disclosures. Do not claim guaranteed inbox placement or run infrastructure checks.",
+      "assertions": [
+        "Reviews wording in context rather than treating individual words as automatic spam triggers",
+        "Preserves accurate free and price terms",
+        "Preserves applicable disclosures",
+        "Suggests only truthful, contextual copy improvements",
+        "Does not guarantee deliverability or claim infrastructure checks"
+      ],
+      "files": []
+    },
+    {
+      "id": 40,
+      "prompt": "I explicitly approve enabling open and click tracking for campaign spring-offer version 4. Preserve every other campaign setting. Make only this approved change and report what the remote readback shows.",
+      "expected_output": "Discover the actual supported setting operation and resource/version first. Change only open/click tracking on the explicitly approved campaign/version, preserving all other existing settings. Read back the remote campaign and report actual values; if mutation or readback is unavailable or uncertain, say so and do not claim success. No send, schedule, or unrelated change is authorized.",
+      "assertions": [
+        "Uses only discovered supported setting operations",
+        "Limits change to approved tracking fields and exact campaign version",
+        "Preserves all other settings",
+        "Reads back and reports actual values or clearly reports unavailable/uncertain outcome",
+        "Does not send, schedule, or make unrelated changes"
+      ],
+      "files": []
+    },
+    {
+      "id": 41,
+      "prompt": "Draft one B2B cold email for our brand ClearBrief to agency sales managers. Our only confirmed capability: assembling public company information into an account brief for a rep to review. We have no customers, case studies, measured results or recipient-specific research. Offer a sample brief. Use a suitable framework, but do not ask for proof we do not have. Draft only.",
+      "expected_output": "Produce a useful subject and concise body from the confirmed capability and segment-level relevance. Choose a fitting structure without forcing PAS or a proof step. Do not copy scenario facts from the framework guide, invent customer results, assume the recipient is hiring or struggling, or open with generic flattery. Use one low-friction sample-offer CTA. Keep any source/limit notes outside the body and do not schedule.",
+      "assertions": [
+        "Provides usable copy without blocking on missing customer proof or research",
+        "Uses only the confirmed capability, brand and segment relevance",
+        "Does not invent observations, customers, results or testimonials from framework examples",
+        "Avoids generic flattery, fear amplification and heavy meeting asks",
+        "Uses one sample-brief CTA and makes no remote changes"
+      ],
+      "files": []
+    },
+    {
+      "id": 42,
+      "prompt": "Draft one permission-based promotional email for our brand Studio Notes. Subscribers explicitly opted into our project-management recommendations. We promote a third-party workbook, not our own product. Confirmed offer: a handoff checklist for assigning owners and reviewers, $29 one-time, with an approved affiliate destination already saved on this offer. No testimonials or outcome statistics exist. Use a compact PASTOR-inspired approach with one view-workbook CTA and this disclosure: I may earn a commission if you buy through my link. Do not send.",
+      "expected_output": "Adapt the structure to the actual evidence, omitting story/testimony rather than inventing them. Clearly present the third-party workbook, confirmed capability, $29 one-time price and supplied affiliate disclosure near the CTA. Use the saved approved destination only if accessible; otherwise keep the draft local and state the missing link outside sendable copy rather than inventing a URL or inserting a placeholder. Do not force a B2B meeting CTA, fabricate urgency or guarantees, remove truthful pricing, or schedule/send.",
+      "assertions": [
+        "Does not imply ownership or invent customer use, testimony or measured outcomes",
+        "Preserves the confirmed one-time price and affiliate disclosure near the recommendation/CTA",
+        "Uses one offer-appropriate CTA rather than forcing a meeting or reply-first CTA",
+        "Uses only the accessible approved destination or reports it unavailable outside the body",
+        "Omits unsupported framework stages and makes no remote changes"
+      ],
       "files": []
     }
   ]

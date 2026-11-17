@@ -17,10 +17,6 @@ Use one private bot project per client. A global skill installation may share in
 
 Installation alone must not create client data, install MailWizz, connect credentials, or authorize a campaign. If persistent tools are unavailable, draft from the supplied brief and state that requirements were not saved. Never claim durable onboarding or tracking from chat history alone.
 
-## Existing private deployments
-
-If an older deployment has populated JSON beside its skill file, do not reset it or leave two active registers. With operator authorization, preserve a recoverable copy and move the exact profile, campaign register, and sources into the private `client-data/` directory. Validate client IDs, revisions, source paths, approval history, and remote IDs before switching. Reconcile existing remote operations rather than recreating campaigns. Never replace populated records with this package's blank templates.
-
 ## Host boundaries
 
 Restrict all client reads/writes to this private workspace; reject traversal, external absolute paths, and symlink escapes. Exclude data from Git and backups shared with other clients; `.gitignore` is not access control. Keep host permissions and MailWizz resource authorization client-scoped. Prompts and JSON alone cannot enforce isolation or approval.
