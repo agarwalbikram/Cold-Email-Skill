@@ -438,6 +438,46 @@
         "Does not invent missing services, offer facts, or send"
       ],
       "files": []
+    },
+    {
+      "id": 45,
+      "prompt": "I am the verified operator onboarding fixture client Fixture Cedar. First company: Fixture Cedar Works; first brand: Fixture Cedar. These facts are confirmed. Save them in this private project. Persistent file tools are available. Do not create a campaign or send anything.",
+      "expected_output": "Inspect the private project storage. Because client-data/ and its profile/register are absent, initialize the directory and both JSON files from the bundled blank templates using available persistent file tools, bind the fixture client identity, save only the confirmed client and company/brand facts with stable IDs, and freshly read back the saved profile/register before confirming. Preserve safe defaults, including approval required, tracking off, and an empty campaign list. Do not refuse merely because a profile is missing, claim persistence before verified readback, or touch remote services.",
+      "assertions": [
+        "Creates absent private client-data directory and both JSON files using persistent file tools",
+        "Persists only confirmed synthetic fixture client and first company/brand facts with stable IDs",
+        "Freshly reads persisted files before confirming success",
+        "Preserves approval-required, tracking-off, and empty-campaign defaults",
+        "Does not mistake a missing new profile for unavailable tools or refuse onboarding",
+        "Does not send, schedule, or perform remote actions"
+      ],
+      "files": []
+    },
+    {
+      "id": 46,
+      "prompt": "I am the verified operator. Add Fixture Cedar Supply and its Fixture Cedar Home brand to the existing Fixture Cedar client. These are confirmed facts. Keep Fixture Cedar Works and Fixture Cedar unchanged, preserve client defaults and history, save the change, then freshly read the profile and register. Do not send or create a campaign.",
+      "expected_output": "Append the confirmed company and brand to the existing client's catalog in the same profile, assigning stable IDs and preserving the original company/brand, client identity, defaults, and existing source/change history. Persist safely, then freshly read back the profile and register before confirming. Do not create another client per company, replace the catalog, reset defaults/history, or perform remote actions.",
+      "assertions": [
+        "Adds the second company and brand to the same client profile",
+        "Preserves the original company and brand and their facts",
+        "Preserves client defaults and existing source/change history",
+        "Freshly reads the saved profile and register before confirming",
+        "Does not create a separate client or send/schedule/create a campaign"
+      ],
+      "files": []
+    },
+    {
+      "id": 47,
+      "prompt": "I am the verified operator onboarding Fixture Client with confirmed first company Fixture Company and brand Fixture Brand. The private project's client-data directory is absent, but persistent file tools return permission denied when asked to create it. Report the outcome. Do not overwrite or claim anything was saved.",
+      "expected_output": "Report that initialization failed because creation of the exact private client-data path was denied, with the tool's actual error/path. Do not claim a profile or register exists or that facts were saved; do not retry elsewhere, silently switch paths, or overwrite any existing data. Distinguish this permission failure from a missing directory/profile when the required tools are available and creation succeeds. If inspecting storage reveals an established client's record is missing, treat it as a recovery case: preserve remaining records and history, do not reset from blank templates, and report the exact missing record and recovery limitation.",
+      "assertions": [
+        "Reports the actual permission-denied failure and affected path",
+        "Does not claim files or facts were persisted",
+        "Does not overwrite, reset, or silently switch storage locations",
+        "Distinguishes denied file operations from a recoverable first-use missing directory",
+        "Requires cautious recovery rather than blank-template reset for established missing records"
+      ],
+      "files": []
     }
   ]
 }

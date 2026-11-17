@@ -6,11 +6,13 @@ Use the private workspace's `client-profile.json` as durable requirements memory
 
 The catalog is `client -> companies -> brands -> niches and offers`. A company can have several brands; a brand can have several niches and own-product or affiliate offers. Every offer belongs to one brand and lists its applicable niche IDs. Give every record a stable unique ID; renaming a company does not change its ID or create another record.
 
+Adding another company for this client appends a new company record and its brands to this same profile, with new stable IDs while preserving the client ID, existing companies, preferences, sources/history and campaign register. Do not create one client profile/workspace per company. Missing `client-data/` on genuine first use must be created as specified in workspace.md, not reported as an inability to save.
+
 Use [bot-flow.md](bot-flow.md) for the first "Hi", returning-client options, correction handling, interactive MailWizz setup, and campaign tracking. The private `campaigns.json` is the sole campaign register; client-profile.json holds reusable requirements, not campaign execution state.
 
 ### Initial onboarding
 
-Collect only what is needed for the first draft: client identity, company and brand, audience/niche, offer and commercial relationship, desired outcome, language/tone, and available source material. Copy the appropriate record templates into their arrays, fill confirmed values, and leave unknowns null. Ask for sender identity, postal address, list permissions, MailWizz resource bindings, sending limits, and time zone before scheduling, not as a barrier to a useful local draft.
+Collect only what is needed for the first draft: client identity, company and brand, audience/niche, offer and commercial relationship, desired outcome, language/tone, and available source material. After identity/private project are established, create missing storage under workspace.md, copy appropriate record templates, persist confirmed facts incrementally and fresh-read before confirming success. Leave unknowns null; missing meeting links or optional service-angle choices do not block these saves. Ask for sender identity, postal address, list permissions, MailWizz resource bindings, sending limits, and time zone before scheduling, not as a barrier to a useful local draft.
 
 `commercial_relationship` is `own_product`, `affiliate`, or `clickbank_affiliate`. `campaign_mode` is `b2b_cold` or `permission_based_promotion`; the relationship and audience mode are separate decisions. Never infer list permission from an affiliate relationship. Promotional mode is not a general lifecycle/nurture automation feature.
 

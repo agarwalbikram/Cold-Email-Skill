@@ -89,7 +89,7 @@ Start with **“Use bikram-cold-email-skill. Hi”**, or provide a complete brie
 
 > Use bikram-cold-email-skill. Write three email variations for our consulting offer to B2B agency owners. Use the attached approved product PDF. Draft only; do not send.
 
-After identifying the client, the bot initializes private files from these blank templates **only for a new client**:
+After the operator confirms the client identity and first company/brand in a private project, the bot uses available persistent file tools to create a missing `client-data/` directory and initialize both private JSON files from these blank templates for a new client. It saves only confirmed facts and verifies them with a fresh read before claiming success. A missing new-client profile is not a reason to refuse when file tools can create the storage; permission failures or unavailable tools must be reported with the exact path/error, without claiming a save. For an established client, a missing record is a recovery case: preserve remaining data and history and never reset from blank templates. A client profile holds one client catalog with multiple companies and brands; adding a company appends to that same profile and preserves existing companies, defaults, sources, and history. Persistent file tools are required for memory across conversations:
 
 | Bundled template | Private working file | Purpose |
 | --- | --- | --- |
@@ -125,7 +125,7 @@ skills/
       evals.json                  # Behavioral evaluation prompts and expectations
 ```
 
-`evals/evals.json` is an evaluation dataset, not an automated test runner. It contains 44 cases, including five [file-backed persistence scenarios](skills/bikram-cold-email-skill/evals/README.md), no-customer-proof/affiliate-writing cases, and service-led reference-style cases. Fixture presence is not evidence that a bot passed them. `.projectmem/` is local maintainer memory, not a runtime dependency or part of the installed skill. The writing references originated from [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills/tree/main/skills/cold-email); this repository adds dedicated-client memory, bot routing, MailWizz workflows and [grounded framework examples](skills/bikram-cold-email-skill/references/frameworks.md) selected by audience, offer, evidence and campaign mode, without a default framework.
+`evals/evals.json` is an evaluation dataset, not an automated test runner. It contains 47 cases, including five file-backed persistence scenarios with pre-created fixtures (31–35) and three new-client initialization/multi-company/failure regressions (45–47; the latter intentionally start without pre-created data), plus no-customer-proof/affiliate-writing and service-led reference-style cases. Fixture presence is not evidence that a bot passed them. `.projectmem/` is local maintainer memory, not a runtime dependency or part of the installed skill. The writing references originated from [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills/tree/main/skills/cold-email); this repository adds dedicated-client memory, bot routing, MailWizz workflows and [grounded framework examples](skills/bikram-cold-email-skill/references/frameworks.md) selected by audience, offer, evidence and campaign mode, without a default framework.
 
 ## Updating
 

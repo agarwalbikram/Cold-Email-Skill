@@ -6,6 +6,7 @@ _Last updated: 2026-11-17_
 Replace this placeholder with a concise description of what this project does, who it serves, and the main technologies or runtime assumptions.
 
 ## Recent issues
+- [DONE] #0003 Bot refuses confirmed onboarding save when private client-data directory/profile is missing [skills/bikram-cold-email-skill/references/workspace.md] (fixed)
 - [DONE] #0002 Pull left main in an unresolved add/add README merge after local packaging commit [README.md] (fixed)
 - [DONE] #0001 Skill installation lacks README and agent routing; agent links and client workspace paths are broken [Skills_AGENTS.md] (fixed)
 

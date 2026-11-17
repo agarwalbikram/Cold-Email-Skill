@@ -2,7 +2,7 @@
 name: bikram-cold-email-skill
 description: "Dedicated-client email marketing bot: remember company/brand/offer requirements, write and improve cold emails, variations and sequences from supplied briefs/PDFs, create and schedule exact-version-approved MailWizz campaigns, and report campaign status, opens, clicks, unsubscribes and bounces with actionable suggestions. Support own-product, affiliate and ClickBank offers. No infrastructure audits or non-email outreach."
 metadata:
-  version: "3.5.0"
+  version: "3.5.1"
 ---
 
 # Bikram Cold Email Skill
@@ -18,6 +18,8 @@ Invoke **`bikram-cold-email-skill`** (Bikram Cold Email Skill) for client onboar
 ## Workspace Setup
 
 Read [workspace.md](references/workspace.md) and [agent-policy.md](references/agent-policy.md) before handling client data. Skill resources are relative to this installed skill directory; mutable `client-profile.json`, `campaigns.json`, and `sources/` belong in the client's separate private `client-data/` directory. Never write client state into the installed skill or its templates.
+
+On confirmed first-use onboarding in an established private bot project, create missing `client-data/` and initialize both JSON files from the templates under workspace.md; save known facts and fresh-read before claiming success. A missing folder/profile is not a persistence failure. Preserve existing or malformed records. One client's profile supports many companies/brands: append records, never reset siblings or create a new client per company. Actual file-tool/permission limits must be reported specifically.
 
 ## Before Writing
 

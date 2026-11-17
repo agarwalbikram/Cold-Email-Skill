@@ -1,0 +1,5 @@
+# #0003 Bot refuses confirmed onboarding save when private client-data directory/profile is missing
+
+- 2026-11-17T07:06:09Z `issue`: Bot refuses confirmed onboarding save when private client-data directory/profile is missing [skills/bikram-cold-email-skill/references/workspace.md]
+- 2026-11-17T07:08:23Z `attempt`: Made first-use mkdir/create-only JSON/save/readback explicit in root and installed bot guidance; added multi-company append and missing-vs-permission/recovery rules plus cases 45-47. Package integrity passes; real file-tool smoke and independent review pending. [skills/bikram-cold-email-skill/references/workspace.md] (partial)
+- 2026-11-17T07:11:05Z `fix`: v3.5.1 explicitly creates first-use client-data and JSON, saves known facts/readback; multi-company append preserves catalog. Real isolated file-tool smoke + parent assertions passed (CTA saved without link, register bytes unchanged). 9 JSON/47 IDs/80 links pass; review clear. Deployed host unverified. [skills/bikram-cold-email-skill/references/workspace.md]
