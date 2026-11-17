@@ -1,30 +1,29 @@
 # Subject Line Optimization
 
-The subject wins the open; the opening line keeps attention; the body earns the reply. For B2B cold email, aim for a short, ordinary, internal-looking note about something the recipient cares about, not an advertisement headline. This does not mean claiming to be a colleague or inventing prior contact. Permission-based affiliate and product promotions can use stronger offer-led subjects and supplied subjects; see [campaign-modes.md](campaign-modes.md).
+Choose a subject that gives this audience a concrete, honest reason to read the actual email. Specificity and subject/body fit matter more than minimum length or an internal-looking style. Permission-based promotions and explicitly supplied subjects follow [campaign-modes.md](campaign-modes.md); do not force them into cold-email conventions.
 
-## Length: 2–4 words
+## Choose the angle, then the length
 
-- Start with 2–4 words. Cut product names, adjectives, and explanations that belong in the body.
-- Put the interesting topic first for mobile previews. Go longer only when the extra words make the hook more specific.
+- Write the body from the confirmed brief first. Privately compare a few subject angles: recipient goal, relevant workflow, or accurate offer. Return the strongest one unless variants are requested; do not show internal deliberation.
+- Use enough words to distinguish this offer from a category label. Short can work when specific; longer can work when each added word clarifies relevance. No mandatory word count, capitalization style or curiosity gap.
+- Front-load the useful topic for mobile previews. Cut filler and unsupported qualifiers, not the detail that makes the subject meaningful.
+- "Too short" feedback calls for useful specificity, not an expanded slogan. Preserve an explicitly requested safe subject, length or style. A subject-only rewrite does not change the body or permanently update brand preferences. If a body is supplied to keep unchanged, return the new subject with that exact body (including punctuation and line breaks), unless the operator explicitly requests output of the subject alone.
 
-## Internal-Looking, Not Salesy
+| Weak choice | Why it is weak | More specific direction, only when supported by the body |
+|-------------|----------------|----------------------------------------------------------|
+| "Wholesale growth" | Category label with no distinctive reason to read | "Support with retail outreach and wholesale orders" |
+| "A complete wholesale growth team for [COMPANY]" | Vague scope claim; a company tag does not supply an angle | "Connecting buyer outreach with B2B ordering" |
+| "Quick question" | No indication of relevance | A concrete question about the workflow the offer supports |
 
-Use the language of an everyday work note: "reply rates," "trial delays," "hiring ops," "Q2 forecast." The recipient should think "this might matter to me," not "another pitch." You do not need to announce a sales pitch in the subject. Identify the sender honestly and keep required disclosures in the email.
+These are diagnostic examples, not universal winners or verified client facts. "Complete" is appropriate only when its implied scope is substantiated. Do not invent a recipient problem, result, urgency or current initiative to make a hook sound specific.
 
-Create a small information gap that the body immediately resolves. Avoid fake Re:/Fwd:, invented shared history, or a hook unrelated to the offer.
+## Honest one-to-one tone
 
-| Pattern | Example | Body payoff |
-|---------|---------|-------------|
-| Problem fragment | "trial drop-off" | Identify the relevant onboarding friction and offer a small next step |
-| Current initiative | "SDR ramp" | Connect a verified hiring initiative to time-to-productivity |
-| Specific curiosity | "pricing page idea" | Share one real observation and offer the remaining ideas |
-| Outcome topic | "content pipeline" | Explain how the offer connects content to revenue |
-
-Examples are patterns, not universal subjects. Choose the one that fits the actual recipient and email.
+Use natural language suited to the brand. An internal-note style is optional, never a disguise: no fake Re:/Fwd:, invented prior conversation or implied employment relationship. An accurate service-led subject is allowed without turning it into a slogan. The body must immediately deliver what the subject suggests.
 
 ## Capitalization
 
-Default to lowercase for a quick personal-note feel; use sentence case when it suits the sender's voice. Preserve proper names. Avoid Title Case That Looks Like A Newsletter Headline.
+Use natural sentence case or the requested brand style, preserving proper names. Lowercase is optional, not an optimization rule. Avoid decorative capitalization and ALL CAPS unless an explicitly requested format justifies them.
 
 ## Personalization: context over name
 
@@ -34,7 +33,7 @@ Personalize the topic, not just the salutation. A real hiring initiative, operat
 
 ## Questions: only when highly specific
 
-Use questions when the question itself creates specific interest: "SDR ramp taking longer?" Generic "Quick question?" uses the whole subject without giving a reason to care. A short topic fragment is the default, not a rule against testing a strong question.
+Use a question when it conveys a specific, relevant reason to read. Generic "Quick question?" supplies no context. A question, statement or fragment can work; choose by meaning and body payoff, not a preferred grammatical shape.
 
 ## What to Avoid
 
@@ -51,7 +50,7 @@ Honest approved offer-specific subjects remain appropriate for permission-based 
 
 ## C-Suite Subject Lines
 
-For executives, lead with one business issue they already care about: "forecast gaps," "new rep ramp," or a verified initiative. Keep the explanation and proof in the body; do not try to fit the whole pitch into the subject.
+For executives, lead with a relevant business goal or workflow the email actually addresses. Keep enough context to make the reason to read clear; do not force a bare topic such as "forecast gaps" when a more specific subject is warranted. Never assert an unverified initiative or pain.
 
 Use a verified `[COMPANY_INITIATIVE]` field or literal project reference when available. Do not use "thank you" or "an update" to imply prior contact that did not occur.
 

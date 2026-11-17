@@ -4,6 +4,8 @@ Install **Bikram Cold Email Skill** (`bikram-cold-email-skill`) to give an LLM a
 
 **Skill name:** `bikram-cold-email-skill` · **Entrypoint:** [`skills/bikram-cold-email-skill/SKILL.md`](skills/bikram-cold-email-skill/SKILL.md)
 
+**v3.6.0 writing update:** subject lines should give a specific, honest reason to open and align with the body; no universal word-count or lowercase rule. Honor explicit subject and service-scope requests. New manual evals cover first-pass wholesale copy, subject-only correction, and requested full-suite copy; they are not run/pass claims.
+
 This repository supplies instructions and blank data templates—not a running bot, email server, scheduler, MCP server, or credentials. Drafting does not require MailWizz. Sending requires a separately configured MailWizz MCP connection and host-enforced permissions and approval.
 
 ## Install
@@ -125,7 +127,7 @@ skills/
       evals.json                  # Behavioral evaluation prompts and expectations
 ```
 
-`evals/evals.json` is an evaluation dataset, not an automated test runner. It contains 47 cases, including five file-backed persistence scenarios with pre-created fixtures (31–35) and three new-client initialization/multi-company/failure regressions (45–47; the latter intentionally start without pre-created data), plus no-customer-proof/affiliate-writing and service-led reference-style cases. Fixture presence is not evidence that a bot passed them. `.projectmem/` is local maintainer memory, not a runtime dependency or part of the installed skill. The writing references originated from [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills/tree/main/skills/cold-email); this repository adds dedicated-client memory, bot routing, MailWizz workflows and [grounded framework examples](skills/bikram-cold-email-skill/references/frameworks.md) selected by audience, offer, evidence and campaign mode, without a default framework.
+`evals/evals.json` is an evaluation dataset, not an automated test runner. It contains 50 cases, including five file-backed persistence scenarios with pre-created fixtures (31–35), three new-client initialization/multi-company/failure regressions (45–47; the latter intentionally start without pre-created data), and three writing regressions (48–50) for fact-grounded wholesale copy, subject-only correction, and explicit full-suite/subject requests. Fixture presence is not evidence that a bot passed them. The dataset and its manual guide describe offline scenario conditions, not executed or passed results. `.projectmem/` is local maintainer memory, not a runtime dependency or part of the installed skill. The writing references originated from [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills/tree/main/skills/cold-email); this repository adds dedicated-client memory, bot routing, MailWizz workflows and [grounded framework examples](skills/bikram-cold-email-skill/references/frameworks.md) selected by audience, offer, evidence and campaign mode, without a default framework.
 
 ## Updating
 

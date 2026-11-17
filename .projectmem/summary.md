@@ -6,6 +6,9 @@ _Last updated: 2026-11-17_
 Replace this placeholder with a concise description of what this project does, who it serves, and the main technologies or runtime assumptions.
 
 ## Recent issues
+- [OPEN] #0005 Generic short/lowercase subject criteria conflict with specific first-draft quality [skills/bikram-cold-email-skill/evals/evals.json] (open)
+  - Partial attempt: Replaced generic short/lowercase subject requirements with reason-to-open/body alignment, retained explicit internal-looking request in case 29, and added manual wholesale/scope regressions 48–50; validation deferred to main agent.
+- [DONE] #0004 First drafts overfavor vague short subjects and service catalogs; revisions pad copy and insert unverified placeholders [skills/bikram-cold-email-skill/SKILL.md] (fixed)
 - [DONE] #0003 Bot refuses confirmed onboarding save when private client-data directory/profile is missing [skills/bikram-cold-email-skill/references/workspace.md] (fixed)
 - [DONE] #0002 Pull left main in an unresolved add/add README merge after local packaging commit [README.md] (fixed)
 - [DONE] #0001 Skill installation lacks README and agent routing; agent links and client workspace paths are broken [Skills_AGENTS.md] (fixed)
@@ -21,7 +24,6 @@ Replace this placeholder with a concise description of what this project does, w
 - User-approved style optimization: current operator example > saved brand style > generic defaults; preserve service explanation/greeting/signature, allow Quick question/em dashes and one conversion goal with two questions. No hard word quota; factual, field, opt-out and send approval protections... [skills/bikram-cold-email-skill/]
 
 ## Notes
-- Eval cases 31–35 use offline synthetic fixtures; copy each files[] input into a fresh .tmp/<case>/client-data/ with explicit profile/register mapping. Fixtures are datasets, never run results; no MCP or live send is authorized.
 - Case 35 requires the local register to represent the persisted pre-mutation approved campaign; a blank register would contradict the required save-before-remote-operation workflow.
 - High churn detected: skills\bikram-cold-email-skill\evals\README.md (4 edits in 10 min) [skills\bikram-cold-email-skill\evals\README.md]
 - Implemented approved four improvements. Dataset 35 cases/5 file-backed; 6 JSON fixtures valid, malformed fixture rejected, 75 links pass. Offline file-tool smoke verified onboarding, scoped correction+history, unchanged greeting/malformed/recovery records. Approval wording review passed; live... [skills/bikram-cold-email-skill/evals/]
@@ -31,6 +33,7 @@ Replace this placeholder with a concise description of what this project does, w
 - Rewrote 13 framework sections with evidence-scoped examples, no default PAS, no invented named-brand results, no-proof and affiliate modes; aligned SKILL shapes and added cases 41-42. 9 JSON/42 IDs/81 links pass. Two offline drafts avoided fabricated proof; live performance unmeasured. [skills/bikram-cold-email-skill/references/frameworks.md]
 - High churn detected: skills\bikram-cold-email-skill\evals\evals.json (4 edits in 10 min) [skills\bikram-cold-email-skill\evals\evals.json]
 - v3.5.0 style optimization implemented: operator examples guide greeting/detail/service explanation/CTA/signature; no forced teaser or phrase ban. 9 JSON/44 cases/81 links pass. Offline reference draft followed style; unsupported-proof countercase asked for facts. Two review nits fixed/checked.... [skills/bikram-cold-email-skill/]
+- High churn detected: skills\bikram-cold-email-skill\evals\evals.json (4 edits in 10 min) [skills\bikram-cold-email-skill\evals\evals.json]
 
 ## Key files
 - `.gitattributes`

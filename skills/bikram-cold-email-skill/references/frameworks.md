@@ -17,6 +17,8 @@ An operator-requested style example takes priority over these patterns for voice
 **Structure:** Greeting → Recipient-goal question → Company and related services → Practical benefit → One invitation → Signature and opt-out.
 **Use when:** The operator wants friendly, direct marketing copy explaining a service bundle. One opening question and a closing audit invitation can share a single conversion goal. A requested website in the signature is informational, not a reason to reject the structure.
 
+Select and connect services around the recipient goal; this structure is not a license to list the entire catalog. Show how the relevant work fits together and what it practically supports, without inventing results. If the operator requests the complete suite, group the functions and retain that breadth. A generic industry lecture is not a substitute for a relevant opening.
+
 Scenario: a fictional wholesale agency's approved services include retail-buyer outreach/follow-up, Faire and RangeMe management, B2B ordering and a free wholesale audit. No customer results or recipient-specific research exist. Brand and sender identifiers below are fictional scenario facts, not reusable client evidence.
 > Hi,
 >

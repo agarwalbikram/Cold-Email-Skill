@@ -29,7 +29,7 @@ Flag known audience/eligibility problems and reported delivery errors for operat
 |----------|-----------------|-----------------|
 | Targeting | Is this the right person with a relevant problem? | Pick one role, situation, and buying trigger per segment |
 | Offer | Is the next step worth their time? | Offer a useful finding, sample, or answer before a meeting |
-| Hook | Is there a reason to open and read now? | Short internal-looking subject plus one specific observation |
+| Hook | Is there a reason to open and read now? | Specific, honest subject aligned with the body; choose length and style for the message and honor explicit operator instructions |
 | Proof and CTA | Is the claim credible and the reply easy? | One approved proof point and one low-friction question |
 | Copy | Is the offer clear at a glance? | Match the requested example and retain useful service detail; short notes and fuller service introductions both fit. No universal word target; exclude required footer text |
 | Follow-up | Does the next touch add a reason to respond? | New angle, proof, or resource, not a reminder that you emailed |

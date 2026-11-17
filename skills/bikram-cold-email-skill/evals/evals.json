@@ -4,12 +4,12 @@
     {
       "id": 1,
       "prompt": "Write a cold email to VP of Marketing at mid-size B2B SaaS companies. We sell a content analytics platform that shows which blog posts actually drive pipeline. Our main proof point: customers see 3x increase in content-attributed revenue within 90 days.",
-      "expected_output": "Should load client-profile.json, resolve company/brand/niche/offer, and reuse saved facts. Ask which brand if ambiguous; do not repeat known onboarding. Write one concise peer-style email unless a different stored format or request applies, with a short honest subject, the provided proof, and one low-friction CTA. Recipient tags must use verified MailWizz syntax such as [FNAME], never curly braces. Do not schedule without per-campaign approval.",
+      "expected_output": "Should load client-profile.json, resolve company/brand/niche/offer, and reuse saved facts. Ask which brand if ambiguous; do not repeat known onboarding. Write one concise peer-style email unless a different stored format or request applies, with an honest, informative subject that gives a relevant reason to open and aligns with the body, the provided proof, and one low-friction CTA. Recipient tags must use verified MailWizz syntax such as [FNAME], never curly braces. Do not schedule without per-campaign approval.",
       "assertions": [
         "Loads client-profile.json and resolves brand and offer",
         "Writes like a peer, not a vendor",
         "Uses concise relevant structure, whether freeform or a named framework",
-        "Subject is short, internal-looking, and gives a relevant reason to open without fake prior contact",
+        "Subject gives a relevant, honest reason to open, fits the body, and does not imply fake prior contact",
         "Every sentence earns its place (concise)",
         "Personalization connects to prospect's problem",
         "Uses proof point as social proof",
@@ -21,12 +21,12 @@
     {
       "id": 2,
       "prompt": "Help me write a cold email to CTOs at enterprise companies. I sell cybersecurity training. My current email has a 2% open rate and 0% reply rate.",
-      "expected_output": "Should clarify which metrics and observation window are available, and report provided counts/rates with denominator when known. Treat a 2% tracked open rate as weak evidence, not proof of a subject-line or infrastructure problem; qualify possible pixel/bot and measurement limitations. Offer evidence-qualified copy/relevance suggestions and a concise peer-style rewrite with a 2-4 word subject, technical credibility for enterprise CTOs, a relevant problem, approved proof, and one low-friction CTA. Do not perform or require infrastructure checks, change tracking, or claim unavailable metrics.",
+      "expected_output": "Should clarify which metrics and observation window are available, and report provided counts/rates with denominator when known. Treat a 2% tracked open rate as weak evidence, not proof of a subject-line or infrastructure problem; qualify possible pixel/bot and measurement limitations. Offer evidence-qualified copy/relevance suggestions and a concise peer-style rewrite with an informative subject that gives a relevant reason to open and aligns with the body (no fixed word count), technical credibility for enterprise CTOs, a relevant problem, approved proof, and one low-friction CTA. Do not perform or require infrastructure checks, change tracking, or claim unavailable metrics.",
       "assertions": [
         "Diagnoses problems from the performance data",
         "Does not infer a subject-line problem from tracked open rate alone",
         "Applies voice calibration for CTO audience",
-        "Subject is short, internal-looking, and gives a relevant reason to open without fake prior contact",
+        "Subject gives a relevant, honest reason to open, fits the body, and does not imply fake prior contact",
         "Adapts tone for enterprise audience",
         "Uses relevant concise structure, approved proof where available, and one appropriate CTA",
         "Explains why each element works"
@@ -68,9 +68,9 @@
     {
       "id": 5,
       "prompt": "What are the best subject lines for cold emails? I want to maximize open rates.",
-      "expected_output": "Should directly help maximize opens with usable short, boring, internal-looking subject lines, usually 2-4 words in lowercase, using problem fragments, current initiatives, or specific curiosity. Explain that the subject wins the open and the body earns the reply. Colleague-like style is allowed; do not require a sales label or product pitch in the subject. The body must deliver on the hook, with no fake Re:/Fwd: or invented prior contact. Provide examples first and concise rationale, not a refusal or a compliance lecture. Mention tracked-open limitations briefly, state that missing/disabled tracking is unavailable rather than zero, and evaluate variants using positive replies or meetings. Do not change tracking to obtain metrics or claim guaranteed filter bypass or numerical lifts.",
+      "expected_output": "Should directly help maximize opens with usable, specific, honest subject lines that give a reason to open, using problem fragments, current initiatives, or curiosity that the body pays off. Match subject length and style to the message; there is no fixed word count or lowercase requirement. Explain that the subject wins the open and the body earns the reply. Colleague-like style is allowed; do not require a sales label or product pitch in the subject. The body must deliver on the hook, with no fake Re:/Fwd: or invented prior contact. Provide examples first and concise rationale, not a refusal or a compliance lecture. Mention tracked-open limitations briefly, state that missing/disabled tracking is unavailable rather than zero, and evaluate variants using positive replies or meetings. Do not change tracking to obtain metrics or claim guaranteed filter bypass or numerical lifts.",
       "assertions": [
-        "Recommends short internal-looking one-to-one subjects with concrete reasons to open",
+        "Recommends specific, honest subjects with concrete reasons to open and no fixed length/style requirement",
         "Provides usable problem, initiative, or curiosity examples before caveats",
         "Explains how the hook wins attention and the body pays it off without claiming filter bypass",
         "Allows colleague-like tone without fake prior contact and does not demand a sales label in the subject",
@@ -276,7 +276,7 @@
     {
       "id": 29,
       "prompt": "Our saved brand is a new expense-report tool for finance managers. It flags missing receipts before month-end. We have no customer case study yet, no MailWizz list selected, and no launch approval. Write one cold email with an internal-looking subject; offer a sample checklist. Do not send anything.",
-      "expected_output": "Write a usable concise local draft with a short internal-looking subject, a finance-workflow problem, the supplied capability, and one low-friction checklist CTA. Do not invent customer results or require a case study, list selection, or launch approval before drafting. Keep unresolved delivery checks outside the copy, and do not schedule or claim tool actions.",
+      "expected_output": "Write a usable concise local draft with an internal-looking subject as explicitly requested, a finance-workflow problem, the supplied capability, and one low-friction checklist CTA. Treat internal-looking style here as an operator instruction, not a universal subject requirement. Do not invent customer results or require a case study, list selection, or launch approval before drafting. Keep unresolved delivery checks outside the copy, and do not schedule or claim tool actions.",
       "assertions": ["Provides an actual cold-email draft and internal-looking subject", "Uses the supplied capability without fictional customer proof", "Does not block drafting on missing list or launch approval", "Does not send, schedule, or claim persistence"],
       "files": []
     },
@@ -476,6 +476,48 @@
         "Does not overwrite, reset, or silently switch storage locations",
         "Distinguishes denied file operations from a recoverable first-use missing directory",
         "Requires cautious recovery rather than blank-template reset for established missing records"
+      ],
+      "files": []
+    },
+    {
+      "id": 48,
+      "prompt": "Write the strongest first-pass cold email for a wholesale brand that wants more retail orders. Verified facts: sender company Get Wholesale Orders; approved website https://getwholesaleorders.example; services are retail-buyer outreach and follow-up, Faire/RangeMe management, B2B ordering setup, and wholesale operations support; only relevant services should be selected for this recipient. Recipient first name is verified and the selected MailWizz list has an FNAME field rendered as [FNAME]. No recipient company/brand is known. No personal sender name, meeting URL, customer proof, results, or testimonials are available. Ask the recipient to meet, but make the invitation actionable by replying. Draft only.",
+      "expected_output": "Draft one strong, specific email on the first pass. Use only verified [FNAME]; do not add [COMPANY] or other unsupported merge tokens. Select a coherent subset of the supplied wholesale services relevant to getting more retail orders rather than listing the entire catalog. Explain a concrete practical benefit without inventing performance results or proof. Use an informative subject that gives a relevant reason to open, is aligned with the body, and is neither a vague topic nor a bloated slogan; no arbitrary word-count or lowercase requirement. Identify Get Wholesale Orders truthfully; do not invent a personal sender name, meeting URL, recipient company, or other placeholders. Keep unknown send-readiness details outside the body. Make the requested meeting invitation usable by asking the recipient to reply, without implying a booking link exists. No send or persistence.",
+      "assertions": [
+        "Uses verified [FNAME] only and does not invent a [COMPANY] field or recipient company",
+        "Selects connected, relevant wholesale services instead of dumping the full catalog",
+        "Explains a practical benefit without claiming unprovided proof, results, or guarantees",
+        "Uses a specific subject aligned with the body, not a vague topic or inflated slogan",
+        "Identifies the known sender company and invents no personal sender name, meeting URL, or placeholder",
+        "Keeps missing send-readiness details outside the email body",
+        "Invites a meeting with a clear reply-based next step, without a nonexistent booking link",
+        "Produces a usable first-pass draft without asking for repeated prompting and does not send or persist it"
+      ],
+      "files": []
+    },
+    {
+      "id": 49,
+      "prompt": "The subject on this draft is 'Wholesale growth' and it is too vague to motivate opening. Improve the subject's reason to open, not just its length. Keep this exact body unchanged: 'Hi [FNAME], We help wholesale brands reach relevant retail buyers and keep retailer follow-up moving. Would you be open to a quick conversation about your retail growth plans? Best, Get Wholesale Orders'. Make only this subject correction; do not rewrite the body or save a lasting preference.",
+      "expected_output": "Replace the vague topic subject with a more concrete, honest reason to open that reflects the existing body (for example, retail-buyer follow-up). Do not merely lengthen the subject or make it more ornate. Return the corrected subject with the exact supplied body unchanged, including punctuation and line breaks as provided. Treat this as a one-off correction, not a permanent preference about future subject length or style.",
+      "assertions": [
+        "Improves the subject's concrete reason to open rather than changing length alone",
+        "Subject is honest and matches the supplied body",
+        "Preserves the body exactly without edits",
+        "Does not save a lasting style or length preference"
+      ],
+      "files": []
+    },
+    {
+      "id": 50,
+      "prompt": "For this draft, include the full service suite: retail-buyer outreach and follow-up, Faire/RangeMe management, B2B ordering setup, wholesale operations support, and export/global trade support. Use this exact subject: 'A complete wholesale growth team for [COMPANY]'. Keep that supplied subject wording and style. Explain the functions in an organized way rather than deleting services to make the email shorter. No claims, customer results, proof, recipient-company field, or performance outcomes are verified. Draft only.",
+      "expected_output": "Honor the operator's explicit request for the complete suite and the supplied exact subject, including its longer internal-looking style and [COMPANY] token as provided in the requested subject; do not silently rewrite or truncate it. Organize the full service list into clear related functions so each requested service remains represented. Do not impose a short-subject or email-length quota, but keep the explanation readable. Do not imply [COMPANY] is a verified recipient merge field, add it to the body, invent recipient facts, proof, outcomes, or testimonials, or send/persist the draft.",
+      "assertions": [
+        "Preserves the exact supplied subject and honors the requested longer internal-looking style",
+        "Includes every requested service function, organized for readability rather than deleting requested breadth",
+        "Does not impose a hard subject or body length quota",
+        "Does not present [COMPANY] as a verified merge field or invent recipient facts",
+        "Makes no unsupported proof, testimonial, or performance claims",
+        "Does not send or persist"
       ],
       "files": []
     }

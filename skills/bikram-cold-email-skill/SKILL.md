@@ -2,7 +2,7 @@
 name: bikram-cold-email-skill
 description: "Dedicated-client email marketing bot: remember company/brand/offer requirements, write and improve cold emails, variations and sequences from supplied briefs/PDFs, create and schedule exact-version-approved MailWizz campaigns, and report campaign status, opens, clicks, unsubscribes and bounces with actionable suggestions. Support own-product, affiliate and ClickBank offers. No infrastructure audits or non-email outreach."
 metadata:
-  version: "3.5.1"
+  version: "3.6.0"
 ---
 
 # Bikram Cold Email Skill
@@ -32,6 +32,8 @@ On confirmed first-use onboarding in an established private bot project, create 
 
 **Match the operator's example first.** When asked to write like a supplied email, use its tone, greeting, structure, detail, CTA and signature as the primary style reference. The current request wins over stored brand style; stored style wins over generic brevity/framework defaults. Preserve the relevant service explanation instead of compressing it into a teaser. Examples supply style, not evidence for claims or permission to send. Save an example as a lasting brand preference only when explicitly requested; see client-workflow.md.
 
+**Compose before presenting.** Read [subject-lines.md](references/subject-lines.md) and run the review in [copy-quality.md](references/copy-quality.md) for every new draft or rewrite. Form a compact working brief from confirmed facts: recipient/segment, one relevant goal, connected capabilities, practical benefit, available proof (or none), and the requested next step. Do not expose internal deliberation or make the operator choose an angle when the brief is sufficient. Write the body, compare a few genuinely different subject angles privately, and present the strongest matching subject/body pair, not the first pass plus an offer to improve it.
+
 The writing principles and benchmarks below default to **B2B cold email**. In permission-based promotional mode, campaign-modes.md governs offer links, disclosures, CTA, and subject style. Universal honesty, eligibility, unsubscribe, and per-campaign approval rules always apply. Missing sending details may block scheduling without blocking a useful local draft.
 
 ---
@@ -45,6 +47,8 @@ Be friendly, direct and confident without exaggerated claims or generic sales ja
 ### Every sentence must earn its place
 
 Cut filler, not useful detail. Follow the requested example's length and level of explanation. A simple offer may fit a short note; a service-led introduction may need roughly 90–140 body words. These are examples, not quotas or caps; do not pad or force every email into an ultra-short teaser.
+
+For a broad service business, organize the explanation around the recipient's goal, not the website menu. Connect the relevant capabilities into a readable account of what the team does and why that helps; do not merely enumerate every available service. Keep the full suite when explicitly requested, grouping related functions without dropping requested facts. Start with useful relevance rather than a generic lesson about the industry; additional length must add meaning, not repeat the opening or CTA.
 
 ### Personalization must connect to the problem
 
@@ -97,12 +101,12 @@ For the full catalog of frameworks with examples, see [frameworks.md](references
 
 ## Subject Lines
 
-Short, boring, internal-looking. The subject line's job is to get the email opened; the opening and body earn the reply. Make it feel like a relevant one-to-one note, not a campaign headline.
+Specific, honest and matched to the body. Give the recipient a concrete reason to read; neither a vague topic label nor a slogan expanded with a company tag is enough.
 
-- Start with 2–4 words, usually lowercase: "reply rates," "hiring ops," "Q2 forecast"
-- Use their problem, current project, or a specific curiosity hook. Leave enough unsaid to make opening worthwhile; the body must pay it off
-- Colleague-like tone is a style, not a claim that you work together. No fake Re:/Fwd:, invented prior conversation, or misleading hook
-- Avoid product pitches, generic urgency, emojis, and name-only personalization in B2B cold subjects. A sales label or product name is not required in the subject; keep sender identity and required disclosures in the email
+- Choose length for meaning, not a 2–4-word target. "Wholesale growth" names a category; "Support with retail outreach and wholesale orders" describes an offer when the body actually covers it. These are illustrations, not reusable defaults
+- Consider a recipient goal, relevant workflow or accurate offer angle; choose the one the email delivers on. Do not invent a current initiative, pain, result or relationship
+- Natural sentence case or the requested brand style; lowercase and internal-note styling are optional, not quality requirements
+- No fake Re:/Fwd:, invented prior conversation, generic urgency, unsupported promises or unverified recipient tags. Honor an explicitly supplied safe subject and requested length/style
 
 See [subject-lines.md](references/subject-lines.md) for patterns, examples, and testing. Use available campaign opens/clicks with their measurement limits; never equate opens with human reading or clicks with purchases.
 
@@ -141,14 +145,15 @@ Classify supplied replies for sequence stop/opt-out handling and draft responses
 
 ## Quality Check
 
-Before presenting, gut-check:
+Before presenting, run [copy-quality.md](references/copy-quality.md) and revise weak copy within this response:
 
-- Does it sound like a human wrote it? (Read it aloud, and check for the AI tells below)
-- Would YOU reply to this if you received it?
-- Does every sentence serve the reader, not the sender?
-- Is the personalization connected to the problem?
-- Is there one clear primary conversion goal, even if a relevance question and closing invitation both support it?
+- Does the subject give a specific, honest reason to read, and does the body deliver it?
+- Does the first substantive sentence establish relevance without a generic industry lecture or invented observation?
+- Do connected capabilities explain the offer and a practical benefit rather than dump services or invent results?
+- Does each paragraph add meaning, with the requested detail and no repeated premise or CTA?
 - Does it match the requested reference's voice, greeting, service detail, CTA and signature without borrowing unsupported facts?
+- Is there one clear primary conversion goal, with verified fields and no editorial placeholders inside the copy?
+- On feedback, fix the cause: "too short" means add useful specificity, not padding; a subject-only revision leaves the body unchanged. Apply one-off feedback to this draft, not permanent preferences unless explicitly requested
 
 ---
 
