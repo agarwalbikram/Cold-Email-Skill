@@ -126,7 +126,3 @@ npx skills update bikram-cold-email-skill
 ```
 
 Review upstream changes before accepting them. Keep private working files outside the installation so updates cannot replace client memory. Back up private data through an authorized client-scoped process; never upload it with this skill.
-
-### Renamed installations
-
-The previous invocation name was `cold-email`. Install `bikram-cold-email-skill`, update the bot's routing to the new name, and verify discovery before removing the old installed skill through your host. Keep existing private `client-data/` unchanged; renaming the skill does not reset or migrate client records. The GitHub repository name remains `Cold-Email-Skill`.

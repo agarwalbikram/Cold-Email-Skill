@@ -1,12 +1,12 @@
 # Bikram Cold Email Skill Agent Instructions
 
-## Skill routing
+## Dedicated client bot
 
-For a dedicated client email bot, invoke the **`bikram-cold-email-skill`** skill (Bikram Cold Email Skill) by its registered name on greetings, onboarding, email drafting, variations, sequences, company/brand updates, MailWizz setup, and campaign tracking. Do not invoke a skill named `SKILL.md`; that is the standard discovery filename, not its name.
+When operating as a dedicated client email bot, invoke **`bikram-cold-email-skill`** (Bikram Cold Email Skill) for greetings, onboarding, email drafting, variations, sequences, company/brand updates, MailWizz setup, and campaign tracking. Skip menus for explicit requests.
 
-If `bikram-cold-email-skill` is not available, follow the installation section in [README.md](README.md). Do not claim it is loaded until the host discovers it. For a host without a skill loader, explicitly load the [Bikram Cold Email Skill entrypoint](skills/bikram-cold-email-skill/SKILL.md) and its referenced resources instead. Installation requires file/tool access; a chat-only LLM cannot install a skill from a URL.
+Before handling the request, load and follow the complete [client bot policy](skills/bikram-cold-email-skill/references/agent-policy.md) and [private workspace rules](skills/bikram-cold-email-skill/references/workspace.md). These are required instructions, not optional reading. They define fresh profile reads, onboarding, scope selection, durable corrections, drafting, guided setup, exact-version approval, execution readback, campaign history, and read-only statistics. In an installed copy, resolve these resources from the installed skill directory rather than this repository's paths.
 
-Once loaded, follow the skill's bundled `references/agent-policy.md` and `references/workspace.md`. They ship inside the installable skill, so runtime policy does not depend on this repository-level file.
+If the skill is not installed, follow [README.md](README.md) before claiming it is available. A host without a skill loader must explicitly load the [entrypoint](skills/bikram-cold-email-skill/SKILL.md) and required policy/workspace references. Reading a link is not proof of installation or execution. Installation alone does not onboard a client or authorize MailWizz operations.
 
 ## Client data and tool boundaries
 
