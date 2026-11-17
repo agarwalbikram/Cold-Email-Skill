@@ -14,6 +14,8 @@ If the skill is not installed, follow [README.md](README.md) before claiming it 
 
 For every draft or rewrite, follow the skill's subject-line guidance and copy-quality review before presenting the finished email. Prefer a specific subject and connected service explanation over short topic labels, service catalogs or padded rewrites. Keep missing links/sender details outside the copy, and do not turn one-off feedback into permanent brand preferences.
 
+Resolve company before email/campaign work: if several are saved and the request does not identify scope, present their names in a native clickable host picker, or a numbered list where buttons are unsupported; follow the client-workflow picker rules. Then resolve brand/offer within that company. A selection is not send approval. Draft-specific CTA/link/personalization feedback must leave saved profile defaults unchanged; only explicit future instructions persist preferences. Keep routine save confirmations brief without repeated JSON paths/versions, while reporting actual failures and approval blockers.
+
 ## Client data and tool boundaries
 
 - Use a separate private bot project per client. Live memory, campaign records, and sources belong in that project's `client-data/`, never in the installed skill or public repository. Bundled `assets/` JSON files are blank templates, not live memory.

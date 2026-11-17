@@ -8,6 +8,7 @@ Replace this placeholder with a concise description of what this project does, w
 ## Recent issues
 - [OPEN] #0005 Generic short/lowercase subject criteria conflict with specific first-draft quality [skills/bikram-cold-email-skill/evals/evals.json] (open)
   - Partial attempt: Replaced generic short/lowercase subject requirements with reason-to-open/body alignment, retained explicit internal-looking request in case 29, and added manual wholesale/scope regressions 48–50; validation deferred to main agent.
+- [DONE] #0006 Draft CTA feedback can leak into lasting preferences; noisy save replies and missing company-first interactive selection [skills/bikram-cold-email-skill/references/client-workflow.md] (fixed)
 - [DONE] #0004 First drafts overfavor vague short subjects and service catalogs; revisions pad copy and insert unverified placeholders [skills/bikram-cold-email-skill/SKILL.md] (fixed)
 - [DONE] #0003 Bot refuses confirmed onboarding save when private client-data directory/profile is missing [skills/bikram-cold-email-skill/references/workspace.md] (fixed)
 - [DONE] #0002 Pull left main in an unresolved add/add README merge after local packaging commit [README.md] (fixed)
@@ -22,9 +23,9 @@ Replace this placeholder with a concise description of what this project does, w
 - User scope: client/brand email and sequence writing, approved MailWizz create/schedule, on-request status/opens/clicks/unsubs/bounces plus suggestions. Remove infrastructure audits/booking duties. Tracking defaults off but explicit approved choices allowed; reports read-only, missing != zero. [skills/bikram-cold-email-skill/]
 - Added evals 43–44 for contextual, one-draft service-led reference use, verified personalization and literal unknown brand token, one reply goal, informational signature URL, no invented proof, and no permanent style change absent instruction; case 7 now evaluates Quick question/em dashes...
 - User-approved style optimization: current operator example > saved brand style > generic defaults; preserve service explanation/greeting/signature, allow Quick question/em dashes and one conversion goal with two questions. No hard word quota; factual, field, opt-out and send approval protections... [skills/bikram-cold-email-skill/]
+- Consumer evals 51+ cover campaign-only CTA edits versus explicit offer-level future CTA persistence, company-first disambiguation for multi-company email/campaign work, native picker and numbered fallback behavior, and fail-closed duplicate/stale/canceled selections. Only owned eval dataset and...
 
 ## Notes
-- Case 35 requires the local register to represent the persisted pre-mutation approved campaign; a blank register would contradict the required save-before-remote-operation workflow.
 - High churn detected: skills\bikram-cold-email-skill\evals\README.md (4 edits in 10 min) [skills\bikram-cold-email-skill\evals\README.md]
 - Implemented approved four improvements. Dataset 35 cases/5 file-backed; 6 JSON fixtures valid, malformed fixture rejected, 75 links pass. Offline file-tool smoke verified onboarding, scoped correction+history, unchanged greeting/malformed/recovery records. Approval wording review passed; live... [skills/bikram-cold-email-skill/evals/]
 - Read-only upstream comparison: core voice rules retained; custom prewriting lost explicit why-this-prospect/proof/signal brief, adds workflow-first routing and mandatory metadata. Quality impact remains a hypothesis: no paired outputs or host traces supplied. No skill edits. [skills/bikram-cold-email-skill/SKILL.md]
@@ -34,6 +35,7 @@ Replace this placeholder with a concise description of what this project does, w
 - High churn detected: skills\bikram-cold-email-skill\evals\evals.json (4 edits in 10 min) [skills\bikram-cold-email-skill\evals\evals.json]
 - v3.5.0 style optimization implemented: operator examples guide greeting/detail/service explanation/CTA/signature; no forced teaser or phrase ban. 9 JSON/44 cases/81 links pass. Offline reference draft followed style; unsupported-proof countercase asked for facts. Two review nits fixed/checked.... [skills/bikram-cold-email-skill/]
 - High churn detected: skills\bikram-cold-email-skill\evals\evals.json (4 edits in 10 min) [skills\bikram-cold-email-skill\evals\evals.json]
+- High churn detected: skills\bikram-cold-email-skill\evals\README.md (4 edits in 10 min) [skills\bikram-cold-email-skill\evals\README.md]
 
 ## Key files
 - `.gitattributes`

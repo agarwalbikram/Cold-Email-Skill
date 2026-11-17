@@ -520,6 +520,98 @@
         "Does not send or persist"
       ],
       "files": []
+    },
+    {
+      "id": 51,
+      "prompt": "Synthetic setup: profile has company Cedar & Co, brand Cedar Goods, offer syn-offer-cedar with cta_goal 'reply with a retail question', and unrelated preferences; register has draft campaign syn-campaign-cedar-01 for that offer plus unrelated campaign syn-campaign-northstar-02 and prior feedback/history. Change only the CTA in selected draft syn-campaign-cedar-01 to 'Would you be open to a 15-minute meeting next week?' This is for that campaign only. Save locally; no remote operations.",
+      "expected_output": "Apply the CTA change only to the selected campaign's current draft. Preserve the entire client profile and unrelated register/history records; permit required campaign material-version/revision increments, creation of a versioned revision/history entry, and invalidation/clearing of any stale approval tied to the prior material/version. Preserve all unrelated content/records byte-for-byte where unchanged. Do not write a CTA goal or preference to the profile/offer or mutate unrelated campaigns. Make no remote calls, sends, schedules, or campaign creation. Confirm only the local save result briefly and accurately; do not narrate technical file paths or repeat a field-by-field audit.",
+      "assertions": [
+        "Changes only the selected campaign's current CTA and preserves its other draft content",
+        "Leaves the full profile, unrelated campaigns, and unrelated register/history records unchanged",
+        "Does not persist one-off CTA feedback as a lasting profile or offer preference",
+        "Performs no remote operation, send, or schedule",
+        "Uses concise, truthful save confirmation without repetitive technical narration"
+      ],
+      "files": []
+    },
+    {
+      "id": 52,
+      "prompt": "Synthetic setup: profile has Cedar & Co / Cedar Goods, selected offer syn-offer-cedar with cta_goal 'reply with a retail question', sibling offer syn-offer-cedar-premium with cta_goal 'ask about wholesale volume', and unrelated company Northstar Analytics. campaigns.json has no registered campaigns or approvals. Set syn-offer-cedar's future CTA goal to inviting a brief meeting next week and save it. Start a fresh read; then draft a one-off email for syn-offer-cedar asking the prospect to reply with a useful resource they would recommend. Do not change future preferences in response to that one-off request.",
+      "expected_output": "Persist the explicitly requested future CTA goal only in the selected offer's existing cta_goal field. Permit the required profile revision increment, timestamp, and change-history entry for that offer; preserve client-wide preferences, sibling offers, unrelated company data, and campaigns.json (the fixture has no registered campaign/approval, so no approval flags need change). A fresh read must return the offer goal for future drafts. For the subsequent one-off draft, use the requested resource-recommendation reply CTA without overwriting the saved offer cta_goal. Report saves briefly and accurately; verify writes before claiming success; do not perform remote operations.",
+      "assertions": [
+        "Stores the future CTA goal only on the selected offer in its existing cta_goal field",
+        "A fresh read reuses that saved goal for future drafts",
+        "The later one-off CTA does not overwrite the offer goal or other lasting preferences",
+        "Leaves sibling offers, profile-wide preferences, and unrelated campaign records unchanged",
+        "Uses concise truthful save status and makes no remote calls"
+      ],
+      "files": []
+    },
+    {
+      "id": 53,
+      "prompt": "Synthetic client-data fixture: company cmp-northstar / Northstar Analytics has brand br-northstar-metrics / Northstar Metrics, analytics SaaS niche, offer syn-offer-northstar, and scoped feedback 'technical, direct, no hype'; company cmp-cedar / Cedar & Co has brand br-cedar-goods / Cedar Goods, wholesale retail niche, offer syn-offer-cedar, and scoped feedback 'warm, founder-led, avoid jargon'. A third unmatched company cmp-unassigned / Unassigned Holdings has no brands or offers. There is no selected company or saved campaign in context. Draft a cold email for our service.",
+      "expected_output": "Before generating copy or writing anything, resolve which company applies. In a capable host, present the actual company choices through a native clickable picker with stable choice IDs, including the empty/unmatched company; don't use Markdown links, preselect, infer from recency, or silently time out to a choice. Do not generate copy, read/write company-specific scoped feedback, save files, or make remote calls before selection. After a valid choice, use only that company's own brand/offer and scoped writing feedback; do not borrow the other company's feedback. If the selected company has no brand/offer, ask the next necessary question rather than substituting another company. Company selection is context resolution, not send/create/schedule approval.",
+      "assertions": [
+        "Asks for company before producing copy or doing any write/remote action when context is ambiguous",
+        "Uses native clickable choices with stable IDs when supported, not fake Markdown links or silent defaults",
+        "Includes the unmatched empty-company catalog entry and does not treat it as a usable brand",
+        "After selection, uses only the selected company's brand, offer, and writing feedback",
+        "Does not import scoped writing feedback from another company",
+        "Company selection does not authorize a campaign launch or other gated operation"
+      ],
+      "files": []
+    },
+    {
+      "id": 54,
+      "prompt": "Synthetic client-data fixture: Northstar Analytics has brand Northstar Metrics, offer syn-offer-northstar, and scoped writing feedback 'technical, direct, no hype'; Cedar & Co has brand Cedar Goods, offer syn-offer-cedar, and scoped feedback 'warm, founder-led, avoid jargon'; Unassigned Holdings has no brands or offers. There is no selected company or saved campaign in context. Create a MailWizz campaign for our service.",
+      "expected_output": "Ask which company first, before generating copy, local writes, or remote calls. Offer actual company choices in a native clickable picker with stable IDs where host support exists; do not use Markdown links, infer a last-used company, or proceed on timeout. After selection, scope drafting and setup to that company's brand, offer, and writing feedback only. If the operator has separately authorized the scoped remote draft-create operation under existing policy, selection resolves scope and that authorized draft-create path may proceed; selection itself is not authorization. Exact campaign/version approval remains separately required before scheduling, activation, or sending, and no launch action may occur without it. If host has no native picker, use a numbered list and require explicit selection before proceeding.",
+      "assertions": [
+        "Requires company selection before copy, local writes, or remote calls for ambiguous multi-company campaign creation",
+        "Uses host-native clickable stable-ID choices when available and a numbered-list fallback otherwise",
+        "Does not silently choose a company on timeout or choose by recency",
+        "Scopes all later content to the selected company's own brand, offer, and writing feedback",
+        "Treats selection as distinct from exact campaign/version approval and does not create remotely before approval"
+      ],
+      "files": []
+    },
+    {
+      "id": 55,
+      "prompt": "Synthetic setup: company cmp-northstar / Northstar Analytics has brand br-northstar-metrics, offer syn-offer-northstar, feedback 'technical, direct, no hype'; company cmp-cedar / Cedar & Co has brand br-cedar-goods, offer syn-offer-cedar, feedback 'warm, founder-led, avoid jargon'. Saved campaign syn-campaign-cedar-01 is uniquely associated with cmp-cedar. Draft an email for Northstar Analytics, then draft for the specifically identified saved campaign syn-campaign-cedar-01. The host exposes stable company IDs.",
+      "expected_output": "The explicitly named company resolves the first request without an unnecessary company question; use only Northstar's brand/offer and scoped writing feedback. The explicitly identified saved campaign resolves the second request to that campaign's own company without an unnecessary company question; use only its scope. Either request may save a local draft where requested and allowed by existing policy. Resolved context alone does not authorize remote operations or launch; if the campaign's company association is missing or ambiguous, ask rather than guessing.",
+      "assertions": [
+        "Does not ask company again when the request explicitly names a unique company",
+        "Does not ask company again when a specifically identified saved campaign has a unique known company association",
+        "Keeps scoped writing feedback isolated to the resolved company/campaign",
+        "Does not treat resolved company context as operation approval"
+      ],
+      "files": []
+    },
+    {
+      "id": 56,
+      "prompt": "Synthetic setup: company cmp-northstar-east and company cmp-northstar-west both display as 'Northstar'; they have distinct IDs, brands br-northstar-east and br-northstar-west, and offers syn-offer-east and syn-offer-west respectively. The host supports native choices. Ask which company to use, then simulate each response in independent runs: cancel; return an unknown ID; return an old/stale ID after the list changes; or choose a valid currently offered ID. Also simulate each late/replayed callback in its own run: replay the valid callback after it already resolved; replay a canceled callback; replay a callback after a replacement request opened; and replay a duplicate callback after request completion. The company choice may still exist in the profile, but these callbacks are not valid for an outstanding choice step.",
+      "expected_output": "Do not collapse duplicate display names into one implicit choice. Present both as distinguishable native choices using stable IDs and any available disambiguating context. Cancel, stale, and unknown selections fail closed: take no action, do not draft, write, or call remote services, and ask the operator to choose again where appropriate. Bind every choice callback or text response to the outstanding request and choice step; consume the request after a valid selection and invalidate it on cancel, replacement request, or completion. Replayed valid/canceled callbacks, callbacks from a replaced request, and duplicate callbacks after completion do nothing—even when their company ID still exists—and cannot resolve or switch scope. Only a valid response for the current outstanding choice resolves scope, and it does not itself approve a remote operation. On a host without native choices, show a numbered list with distinguishable labels and require explicit selection; do not select a default.",
+      "assertions": [
+        "Distinguishes same-name companies by stable ID and available context",
+        "Cancellation, stale IDs, and unknown IDs never silently resolve to a company",
+        "Invalid/canceled selection causes no copy generation, write, or remote operation",
+        "A valid offered selection resolves scope without granting operation approval",
+        "Replayed valid, canceled, replaced-request, or duplicate-completion callbacks are ignored even when the company ID still exists",
+        "Only a response bound to the currently outstanding request and choice step can resolve scope; the request is consumed after selection and invalidated on cancel, replacement, or completion",
+        "No-native-picker fallback is a numbered list requiring explicit selection"
+      ],
+      "files": []
+    },
+    {
+      "id": 57,
+      "prompt": "Synthetic fixture: company cmp-northstar / Northstar Analytics has brand br-northstar-metrics, offer syn-offer-northstar, and scoped feedback 'technical, direct, no hype'; company cmp-cedar / Cedar & Co has brand br-cedar-goods, offer syn-offer-cedar, and scoped feedback 'warm, founder-led, avoid jargon'. Draft an email for an unspecified company. The host does not support a native picker or structured choice tool.",
+      "expected_output": "Ask which company first and present a clearly labeled numbered list of the actual company choices present in the fixture. Require an explicit selection before generating copy, applying scoped writing feedback, writing files, or making remote calls. Do not invent an empty-company entry; if the fixture includes a company with no brands/offers, show it as-is and ask the next necessary question after selection. Do not fake clickable Markdown links, infer from recency, preselect, or silently time out to a choice. After selection, use only that company's own scope; if it has no usable brand/offer, ask the next necessary question. Selection does not approve a campaign operation.",
+      "assertions": [
+        "Uses an explicit numbered list because no native picker is available",
+        "Requires an explicit selection before copy, scoped feedback, writes, or remote calls",
+        "Does not use fake links, preselect, guess from recency, or silently default",
+        "Scopes any subsequent work to the selected company only"
+      ],
+      "files": []
     }
   ]
 }
