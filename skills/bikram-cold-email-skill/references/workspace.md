@@ -2,7 +2,7 @@
 
 ## Two locations, one source of truth each
 
-- **Installed skill:** `cold-email`, containing instructions, `references/`, and blank JSON templates in `assets/`. Treat these resources as read-only. Resolve resource links from the installed skill, never from the current working directory.
+- **Installed skill:** `bikram-cold-email-skill` (Bikram Cold Email Skill), containing instructions, `references/`, and blank JSON templates in `assets/`. Treat these resources as read-only. Resolve resource links from the installed skill, never from the current working directory.
 - **Private client workspace:** a dedicated bot project with a `client-data/` directory containing the live `client-profile.json`, `campaigns.json`, and optional `sources/`. All unqualified runtime filenames in this skill refer to this private directory, not `assets/`.
 
 Use one private bot project per client. A global skill installation may share instructions, never client state. If the host has not identified a stable private project, resolve it with the operator before saving; do not guess a directory from client names or document contents. Configure the host to use the same project across sessions.

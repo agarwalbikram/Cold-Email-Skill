@@ -1,17 +1,17 @@
 ---
-name: cold-email
+name: bikram-cold-email-skill
 description: "Dedicated-client email bot: onboard on greeting, remember and correct company/brand/niche/offer details, write single emails, variations or sequences from approved PDFs/copy, and use MailWizz tags such as [FNAME]. Guide MailWizz MCP list/segment, regular/autoresponder, delivery-server and timing setup; execute only after exact-version approval. Save campaign IDs/history/statistics and track on request. Support own-product, affiliate and ClickBank promotions; no social outreach or unrelated lifecycle automation."
 metadata:
-  version: "3.2.0"
+  version: "3.3.0"
 ---
 
-# Cold Email
+# Bikram Cold Email Skill
 
 Write relevant, human emails for one dedicated client bot with multiple companies, brands, niches, and offers. Support both own-product and third-party promotions, without pretending the client owns an affiliate product. Use MailWizz MCP only, and schedule only the exact version the operator approves. No non-email outreach or general lifecycle automation.
 
 ## When to Use
 
-Invoke **`cold-email`** for client onboarding, email drafts, variations, sequences, company/brand corrections, or approved MailWizz campaign setup and tracking. A dedicated email bot also uses it on greetings. This is an instruction skill, not a running bot or an MCP server.
+Invoke **`bikram-cold-email-skill`** (Bikram Cold Email Skill) for client onboarding, email drafts, variations, sequences, company/brand corrections, or approved MailWizz campaign setup and tracking. A dedicated email bot also uses it on greetings. This is an instruction skill, not a running bot or an MCP server.
 
 ## Workspace Setup
 

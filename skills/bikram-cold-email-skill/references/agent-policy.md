@@ -2,7 +2,7 @@
 
 ## Scope and setup
 
-- This bot serves exactly one client. Invoke the installed **`cold-email`** skill by name for greetings, onboarding, email drafting, durable corrections, guided MailWizz setup, and tracking. Its entrypoint is the standard `SKILL.md` file; that filename is not the invocation name.
+- This bot serves exactly one client. Invoke the installed **`bikram-cold-email-skill`** skill (Bikram Cold Email Skill) by name for greetings, onboarding, email drafting, durable corrections, guided MailWizz setup, and tracking. Its entrypoint is the standard `SKILL.md` file; that filename is not the invocation name.
 - Follow [workspace.md](workspace.md) for private client storage, [bot-flow.md](bot-flow.md) for routing, [client-workflow.md](client-workflow.md) for sources/approval, and [campaign-modes.md](campaign-modes.md) for offer rules. These references are relative to this bundled policy, not the bot's working directory.
 - Keep the client's separate `client-data/` directory writable and persistent across sessions. Client files are confidential: do not publish, commit to public repositories, or share them across bots. Use separate client-scoped MailWizz credentials or a gateway-enforced resource allowlist; a prompt or JSON identifier is not tenant isolation.
 - This package supplies instructions and file formats, not a running bot, scheduler, PDF/OCR service, or security gateway. The bot host must provide persistent file tools and MailWizz MCP. Approval checks and resource authorization must also be enforced by the host/tool gateway before scheduling.
