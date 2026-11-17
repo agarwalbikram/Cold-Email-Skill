@@ -1,0 +1,5 @@
+# #0008 Draft grounding correction overrides operator-supplied placeholder template and audit CTA instead of preserving requested reference
+
+- 2026-11-17T08:15:31Z `issue`: Draft grounding correction overrides operator-supplied placeholder template and audit CTA instead of preserving requested reference [skills/bikram-cold-email-skill/SKILL.md]
+- 2026-11-17T08:19:43Z `attempt`: v3.7.2 recognizes supplied desired placeholder output as template without keyword; generation preserved body wording/paragraphs/variables/audit/footer (only Markdown break spaces differed), no extra subject. Ordinary draft countercase omitted unverified tags. 61 unique evals parse; review pending. [skills/bikram-cold-email-skill/SKILL.md] (worked)
+- 2026-11-17T08:21:23Z `fix`: v3.7.2 honors supplied placeholder desired output as reusable template, preserving wording/variables/audit/signature/footer without silent mapping. Exact-content offline check (ignoring Markdown break spaces) and ordinary-draft countercase pass; 61 cases/9 JSON/84 links valid. Review clear; host unverified. [skills/bikram-cold-email-skill/SKILL.md]

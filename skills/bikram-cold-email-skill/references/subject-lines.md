@@ -4,18 +4,20 @@ Choose a subject that gives this audience a concrete, honest reason to read the 
 
 ## Choose the angle, then the length
 
-- Write the body from the confirmed brief first. Privately compare a few subject angles: recipient goal, relevant workflow, or accurate offer. Return the strongest one unless variants are requested; do not show internal deliberation.
+- Write the body first, then compare a few different reasons this recipient would read: a relevant goal/opportunity, a useful answer to a workflow question, or a verified trigger. Pick the strongest body-backed hook, not merely the clearest description of your service. Return one unless variants are requested; keep deliberation private.
 - Use enough words to distinguish this offer from a category label. Short can work when specific; longer can work when each added word clarifies relevance. No mandatory word count, capitalization style or curiosity gap.
 - Front-load the useful topic for mobile previews. Cut filler and unsupported qualifiers, not the detail that makes the subject meaningful.
 - "Too short" feedback calls for useful specificity, not an expanded slogan. Preserve an explicitly requested safe subject, length or style. A subject-only rewrite does not change the body or permanently update brand preferences. If a body is supplied to keep unchanged, return the new subject with that exact body (including punctuation and line breaks), unless the operator explicitly requests output of the subject alone.
 
 | Weak choice | Why it is weak | More specific direction, only when supported by the body |
 |-------------|----------------|----------------------------------------------------------|
-| "Wholesale growth" | Category label with no distinctive reason to read | "Support with retail outreach and wholesale orders" |
-| "A complete wholesale growth team for [COMPANY]" | Vague scope claim; a company tag does not supply an angle | "Connecting buyer outreach with B2B ordering" |
+| "Wholesale growth" | Names a category, not a reason to read | "Could more retailers stock your products?" when the body offers relevant buyer outreach |
+| "From retail-buyer outreach to wholesale orders" | Summarizes the service journey without a reader-facing hook | "A wholesale team without the extra hires" when managed execution genuinely substitutes for an internal team; never imply the recipient is hiring |
 | "Quick question" | No indication of relevance | A concrete question about the workflow the offer supports |
 
 These are diagnostic examples, not universal winners or verified client facts. "Complete" is appropriate only when its implied scope is substantiated. Do not invent a recipient problem, result, urgency or current initiative to make a hook sound specific.
+
+Test the hook against the selected audience: why would this person care now or find the offer worth considering? A concrete possible benefit or relevant question can answer that without claiming a known pain. If the subject could fit any business unchanged, or just strings features together, rewrite it. Do not manufacture intrigue ("one thing about your business"), pretend to have audit findings before doing the work, or imply guaranteed growth. An accurate hook is a copy hypothesis, not proof of higher opens.
 
 ## Honest one-to-one tone
 

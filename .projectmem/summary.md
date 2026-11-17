@@ -8,6 +8,10 @@ Replace this placeholder with a concise description of what this project does, w
 ## Recent issues
 - [OPEN] #0005 Generic short/lowercase subject criteria conflict with specific first-draft quality [skills/bikram-cold-email-skill/evals/evals.json] (open)
   - Partial attempt: Replaced generic short/lowercase subject requirements with reason-to-open/body alignment, retained explicit internal-looking request in case 29, and added manual wholesale/scope regressions 48–50; validation deferred to main agent.
+- [DONE] #0010 Style reference is treated as verbatim desired output; subject examples favor service labels over reader motivation. User rejects copied reference. [skills/bikram-cold-email-skill/SKILL.md] (fixed)
+- [DONE] #0009 Product URL onboarding asks audience before multi-page offer research and lacks sourced audience recommendation/coverage contract [skills/bikram-cold-email-skill/references/client-workflow.md] (fixed)
+- [DONE] #0008 Draft grounding correction overrides operator-supplied placeholder template and audit CTA instead of preserving requested reference [skills/bikram-cold-email-skill/SKILL.md] (fixed)
+- [DONE] #0007 Screenshot drafts fabricate research and editorial placeholders, compress service explanation and substitute an audit for requested meeting [skills/bikram-cold-email-skill/references/personalization.md] (fixed)
 - [DONE] #0006 Draft CTA feedback can leak into lasting preferences; noisy save replies and missing company-first interactive selection [skills/bikram-cold-email-skill/references/client-workflow.md] (fixed)
 - [DONE] #0004 First drafts overfavor vague short subjects and service catalogs; revisions pad copy and insert unverified placeholders [skills/bikram-cold-email-skill/SKILL.md] (fixed)
 - [DONE] #0003 Bot refuses confirmed onboarding save when private client-data directory/profile is missing [skills/bikram-cold-email-skill/references/workspace.md] (fixed)
@@ -26,9 +30,6 @@ Replace this placeholder with a concise description of what this project does, w
 - Consumer evals 51+ cover campaign-only CTA edits versus explicit offer-level future CTA persistence, company-first disambiguation for multi-company email/campaign work, native picker and numbered fallback behavior, and fail-closed duplicate/stale/canceled selections. Only owned eval dataset and...
 
 ## Notes
-- High churn detected: skills\bikram-cold-email-skill\evals\README.md (4 edits in 10 min) [skills\bikram-cold-email-skill\evals\README.md]
-- Implemented approved four improvements. Dataset 35 cases/5 file-backed; 6 JSON fixtures valid, malformed fixture rejected, 75 links pass. Offline file-tool smoke verified onboarding, scoped correction+history, unchanged greeting/malformed/recovery records. Approval wording review passed; live... [skills/bikram-cold-email-skill/evals/]
-- Read-only upstream comparison: core voice rules retained; custom prewriting lost explicit why-this-prospect/proof/signal brief, adds workflow-first routing and mandatory metadata. Quality impact remains a hypothesis: no paired outputs or host traces supplied. No skill edits. [skills/bikram-cold-email-skill/SKILL.md]
 - High churn detected: skills\bikram-cold-email-skill\evals\evals.json (4 edits in 10 min) [skills\bikram-cold-email-skill\evals\evals.json]
 - Scope cleanup v3.4.0: replaced infra guide with copy-quality; removed booking playbook; approved tracking choices + read-only metrics/suggestions. 9 JSON/40 IDs/79 links pass. Two offline reporting generations correct; independent boundary review passed. Live MCP untested, no commit. [skills/bikram-cold-email-skill/]
 - Rewrote 13 framework sections with evidence-scoped examples, no default PAS, no invented named-brand results, no-proof and affiliate modes; aligned SKILL shapes and added cases 41-42. 9 JSON/42 IDs/81 links pass. Two offline drafts avoided fabricated proof; live performance unmeasured. [skills/bikram-cold-email-skill/references/frameworks.md]
@@ -36,6 +37,9 @@ Replace this placeholder with a concise description of what this project does, w
 - v3.5.0 style optimization implemented: operator examples guide greeting/detail/service explanation/CTA/signature; no forced teaser or phrase ban. 9 JSON/44 cases/81 links pass. Offline reference draft followed style; unsupported-proof countercase asked for facts. Two review nits fixed/checked.... [skills/bikram-cold-email-skill/]
 - High churn detected: skills\bikram-cold-email-skill\evals\evals.json (4 edits in 10 min) [skills\bikram-cold-email-skill\evals\evals.json]
 - High churn detected: skills\bikram-cold-email-skill\evals\README.md (4 edits in 10 min) [skills\bikram-cold-email-skill\evals\README.md]
+- High churn detected: skills\bikram-cold-email-skill\evals\evals.json (4 edits in 10 min) [skills\bikram-cold-email-skill\evals\evals.json]
+- Screenshot regression lesson: fully specified one-shot briefs did not represent sparse onboarding. Replay chronological operator turns with actual generated replies and explicit deterministic source events; never embed desired/bad assistant replies as model inputs. Host activation needs... [skills/bikram-cold-email-skill/evals/README.md]
+- gotcha: Static reads of kit.com homepage and /affiliates returned Cloudflare HTTP 403; convertkit.com redirected successfully to equivalent Kit pages, including /affiliate. Future evidence should record redirects and blocked requested URLs accurately. [.tmp/copy-eval/sources.json]
 
 ## Key files
 - `.gitattributes`

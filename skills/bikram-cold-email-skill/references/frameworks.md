@@ -2,14 +2,14 @@
 
 Use these as thinking structures, not text to copy. Choose for the selected brand, audience, offer, evidence and campaign mode; no framework is the default or guaranteed to perform. Use fewer steps or write freeform when that makes the email clearer.
 
-An operator-requested style example takes priority over these patterns for voice, greeting, length, service detail, CTA and signature. Do not replace a service-led introduction with a sample-offer teaser just because the examples below are short. Use only supported facts and verified fields; style never overrides safety or approval.
+An operator-requested style example guides voice, useful detail and organization before these patterns, not exact sentences unless explicitly requested. Do not replace a service-led introduction with a sample-offer teaser because examples below are short. Keep the actual confirmed CTA; use only supported facts and verified fields. Style never overrides safety or approval.
 
 ## Evidence and mode first
 
 - Examples are fictional teaching scenarios, not client facts. Each scenario names the facts it assumes; use equivalent facts only when supplied or verified for the selected brand. Never copy its observation, capability or customer story into another client's email as evidence.
 - No customer proof? Use an approved capability, useful sample or relevant question. Omit the proof step rather than inventing customers, numbers, endorsements or results. Treat unverified recipient pain as a possibility, not a diagnosis.
 - A verified trigger must connect to the offer. Without one, use honest segment-level relevance instead of flattery or invented research. Never infer sensitive personal circumstances.
-- For B2B cold first touches, prefer one low-friction reply CTA. Permission-based promotions may use one approved offer-link CTA and accurate offer-led subjects; preserve affiliate identity, disclosures and terms under [campaign-modes.md](campaign-modes.md).
+- For B2B cold first touches without a specified CTA, prefer one low-friction reply ask. A requested meeting remains a meeting invitation; without a booking URL, arrange it by reply. Do not add a free audit, sample or incentive merely because an example uses it. Permission-based promotions may use one approved offer-link CTA; preserve affiliate identity, disclosures and terms under [campaign-modes.md](campaign-modes.md).
 - The quoted examples show body cores, not complete send-ready messages. Add the selected sender's required signature, postal address, disclosures and opt-out/unsubscribe content. No recipient tags or editorial placeholders are needed in these examples; actual MailWizz tags still require validation.
 
 ## Service-led introduction

@@ -1,0 +1,5 @@
+# #0010 Style reference is treated as verbatim desired output; subject examples favor service labels over reader motivation. User rejects copied reference.
+
+- 2026-11-17T08:54:14Z `issue`: Style reference is treated as verbatim desired output; subject examples favor service labels over reader motivation. User rejects copied reference. [skills/bikram-cold-email-skill/SKILL.md]
+- 2026-11-17T09:13:57Z `attempt`: v3.9.0 separates style/original prose from explicit exact-body requests; reader-motivation subject hooks.20 generation scenarios across6 real-site evidence sets plus synthetic edges passed observed intent/fields/CTA/affiliate/sequence/terms assertions. Independent review pending; no campaign metrics. [skills/bikram-cold-email-skill/SKILL.md] (worked)
+- 2026-11-17T09:16:21Z `fix`: v3.9.0 original-reference vs exact-copy distinction and honest reader-facing subject hooks verified with20 retained outputs across6 real-site evidence sets. Independent grading20pass/0weak/0fail; Kit source provenance corrected without falsifying original prompt. No measured open-rate/deployed-host claims. [skills/bikram-cold-email-skill/SKILL.md]
