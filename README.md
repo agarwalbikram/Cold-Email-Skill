@@ -31,13 +31,13 @@ npx skills add agarwalbikram/Cold-Email-Skill --skill bikram-cold-email-skill --
 npx skills list
 ```
 
-Use only the command matching your host. Add `--global` if you intentionally want shared instructions across projects; client data must still remain private and separate. Review an existing skill with the same name before replacing it. Reload/restart your host if needed for discovery. Installation does not automatically copy this repository's root `AGENTS.md` into your bot project.
+Use only the command matching your host. Add `--global` if you intentionally want shared instructions across projects; client data must still remain private and separate. Review an existing skill with the same name before replacing it. Reload/restart your host if needed for discovery. Installation does not automatically copy this repository's root `Skill_Agents.md` into your bot project.
 
 ### Instructions to give an LLM bot
 
 ```text
 Install Bikram Cold Email Skill (bikram-cold-email-skill) from https://github.com/agarwalbikram/Cold-Email-Skill.
-Read its README first. Use the Skills CLI from my private bot project, selecting
+Read its README and Skill_Agents.md first. Use the Skills CLI from my private bot project, selecting
 only bikram-cold-email-skill and your actual agent host. Preserve any existing skill and client
 data; report a name conflict rather than overwriting it. Verify the installed
 skill is discoverable, then invoke bikram-cold-email-skill by name. Follow its workspace and
@@ -62,7 +62,7 @@ Without a skill loader, configure the host to load the entrypoint and its linked
 
 ## Tell your agent when to use it
 
-Add this to your **existing** private bot project's `AGENTS.md` or equivalent host instructions; merge it rather than replacing unrelated instructions:
+Configure your dedicated bot host to load [Skill_Agents.md](Skill_Agents.md) explicitly as persistent bot instructions. This file is for the email bot, not for repository-maintenance coding agents. The custom filename is not automatically discovered. Preserve existing host instructions and merge the following routing rule rather than replacing unrelated instructions:
 
 ```text
 For this dedicated client email bot, invoke the installed bikram-cold-email-skill skill by name
@@ -73,7 +73,7 @@ this private project's client-data/, never inside installed skill files. Never
 send, schedule, activate, or test-send without exact operation/version approval.
 ```
 
-The repository's [AGENTS.md](AGENTS.md) routes by this same skill name. The full runtime policy is bundled inside the skill so it survives installation without relying on repository-root files.
+The repository's [Skill_Agents.md](Skill_Agents.md) routes by this same skill name and requires the complete client bot policy. The full runtime policy is also bundled inside the skill so it survives installation without relying on repository-root files. If copying Skill_Agents.md into a separate bot project, resolve its policy/workspace links from the installed `bikram-cold-email-skill` directory, not from the bot project's root.
 
 ## First use and JSON files
 
@@ -104,7 +104,7 @@ Missing persistent file tools must be reported; the bot must not pretend it save
 ## Repository layout
 
 ```text
-AGENTS.md                         # Route the bot to bikram-cold-email-skill by name
+Skill_Agents.md                   # Explicitly loaded email-bot instructions
 README.md                         # Installation and usage
 skills/
   bikram-cold-email-skill/
