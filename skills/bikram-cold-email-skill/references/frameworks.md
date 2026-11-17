@@ -10,7 +10,7 @@ An operator-requested style example guides voice, useful detail and organization
 - No customer proof? Use an approved capability, useful sample or relevant question. Omit the proof step rather than inventing customers, numbers, endorsements or results. Treat unverified recipient pain as a possibility, not a diagnosis.
 - A verified trigger must connect to the offer. Without one, use honest segment-level relevance instead of flattery or invented research. Never infer sensitive personal circumstances.
 - For B2B cold first touches without a specified CTA, prefer one low-friction reply ask. A requested meeting remains a meeting invitation; without a booking URL, arrange it by reply. Do not add a free audit, sample or incentive merely because an example uses it. Permission-based promotions may use one approved offer-link CTA; preserve affiliate identity, disclosures and terms under [campaign-modes.md](campaign-modes.md).
-- The quoted examples show body cores, not complete send-ready messages. Add the selected sender's required signature, postal address, disclosures and opt-out/unsubscribe content. No recipient tags or editorial placeholders are needed in these examples; actual MailWizz tags still require validation.
+- The quoted examples show body cores, not full output. Every generated full email must add the `[FNAME]` greeting, relevant recipient tags, personal sender/company/site signature and linked MailWizz unsubscribe footer under [personalization.md](personalization.md), plus required postal address/disclosures. Draft tokens are allowed before verification; scheduling is not.
 
 ## Service-led introduction
 
@@ -34,7 +34,7 @@ Scenario: a fictional wholesale agency's approved services include retail-buyer 
 > Morgan
 > Harbor Wholesale
 
-Use the actual approved sender/site details and working unsubscribe mechanism when composing a campaign; do not copy these fictional identifiers or invent a website. Map a requested personal greeting or recipient-brand field only after verifying the list fields. If reply-based opt-out handling is unsupported, do not promise that replying "no" stops follow-ups; flag the blocker outside the draft.
+Use the selected sender's real identity/site, `[Your Name]` if its personal sender is unknown, relevant draft tags and the linked `[UNSUBSCRIBE_URL]` footer from personalization.md. Do not copy fictional scenario identities. Verify actual list mappings and rendering before sending; do not promise reply-no stopping without supported controls.
 
 ## PAS — Problem, Agitate, Solution
 

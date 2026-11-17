@@ -9,15 +9,8 @@ Choose a subject that gives this audience a concrete, honest reason to read the 
 - Front-load the useful topic for mobile previews. Cut filler and unsupported qualifiers, not the detail that makes the subject meaningful.
 - "Too short" feedback calls for useful specificity, not an expanded slogan. Preserve an explicitly requested safe subject, length or style. A subject-only rewrite does not change the body or permanently update brand preferences. If a body is supplied to keep unchanged, return the new subject with that exact body (including punctuation and line breaks), unless the operator explicitly requests output of the subject alone.
 
-| Weak choice | Why it is weak | More specific direction, only when supported by the body |
-|-------------|----------------|----------------------------------------------------------|
-| "Wholesale growth" | Names a category, not a reason to read | "Could more retailers stock your products?" when the body offers relevant buyer outreach |
-| "From retail-buyer outreach to wholesale orders" | Summarizes the service journey without a reader-facing hook | "A wholesale team without the extra hires" when managed execution genuinely substitutes for an internal team; never imply the recipient is hiring |
-| "Quick question" | No indication of relevance | A concrete question about the workflow the offer supports |
 
-These are diagnostic examples, not universal winners or verified client facts. "Complete" is appropriate only when its implied scope is substantiated. Do not invent a recipient problem, result, urgency or current initiative to make a hook sound specific.
-
-Test the hook against the selected audience: why would this person care now or find the offer worth considering? A concrete possible benefit or relevant question can answer that without claiming a known pain. If the subject could fit any business unchanged, or just strings features together, rewrite it. Do not manufacture intrigue ("one thing about your business"), pretend to have audit findings before doing the work, or imply guaranteed growth. An accurate hook is a copy hypothesis, not proof of higher opens.
+Generate subjects from this brief, not stock examples in this reference. Center the buyer's primary goal and make the body pay it off; do not select a supporting feature merely because it offers a clever question. Avoid hiring/cost-saving angles without that being the selected purchase reason, loaded either/or diagnostics, and long questions packed with workflow jargon. A concrete possible benefit can be relevant without asserting a known pain. Do not manufacture intrigue or imply audit findings before doing the work. No hook proves higher opens.
 
 ## Honest one-to-one tone
 

@@ -1,8 +1,17 @@
-# Evaluations (1–66): persistence, writing, scope, research, exact-copy intent, originality and subject hooks
+# Evaluations (1–68): persistence, writing, scope, research, conversation and tagged footer regressions
 
 Case 61 explicitly requests exact reusable-body preservation, including variables and footer; it is not a style-reference case. Case 65 instead requests original prose guided by a reference while retaining variables and useful detail. Case 66 checks a subject-only reader-facing hook against an unchanged body. Judge honesty and body payoff, not an assumed open-rate improvement. These entries are scenarios, not executed passes.
 
+Case 68 covers mandatory draft tags and complete linked signature/footer per email, variant and sequence step, plus Markdown/HTML/plain text, known sender, affiliate identity, mismatched actual field mappings and subject-only edits. v3.10.0 supersedes earlier generic-greeting/no-placeholder draft defaults: proposed `[FNAME]`/`[COMPANYNAME]` and sender placeholders are now expected locally; actual field/rendering verification still gates execution. Historical v3.9.x outputs remain unchanged records, not passes for this new contract.
+
+[v3.10.0 footer results](results/footer-3.10.0.json) retain nine actual generation scenarios producing 11 full emails plus one subject-only response. Text checks cover per-item tags/signature/unsubscribe, HTML/plain-text conversion, confirmed sender name, affiliate sender identity and mismatched/missing list values. These are offline text checks, not evidence of MailWizz rendering, actual suppression or deployed activation.
+
+
+
 Cases 62–64 cover automatic multi-page discovery and audience recommendations, absent/partial/unsafe sources, and explicit CTO/multi-product targeting. Run with deterministic fetch-tool fixtures and inspect actual request traces; prompt text alone is not fetch evidence. Case 63's A/B/C states are independent runs. Never fetch the illustrated local/private addresses. Live URL testing, when authorized, must separately retain read/failed/skipped coverage and citations; do not substitute a model-generated crawl log. No sending or private profile overwrite is authorized.
+
+Case 67 comes from user screenshots, not a well-specified single-turn brief: replay greeting, optional-form cancellation, website, "Create cold email", then "That sounds very bad". Verify direct-chat recovery and preservation of the main purchase goal through rewriting; separately verify an explicit technical angle. Research requires actual fetch traces through accessible core service/industry pages. [v3.9.1 chained text replay](results/conversation-3.9.1.json) records three runs, cancellation recovery and a technical countercase, but has no live tools: it does not prove deployed form behavior, persistence or research completeness. The screenshots invalidate treating the earlier 20 single-turn quality passes as end-to-end workflow proof.
+
 
 ## Recorded v3.9.0 copy evaluations
 

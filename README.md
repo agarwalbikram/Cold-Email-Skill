@@ -4,6 +4,10 @@ Install **Bikram Cold Email Skill** (`bikram-cold-email-skill`) to give an LLM a
 
 **Skill name:** `bikram-cold-email-skill` · **Entrypoint:** [`skills/bikram-cold-email-skill/SKILL.md`](skills/bikram-cold-email-skill/SKILL.md)
 
+**v3.10.0 tags and footer:** every newly composed email, variation and sequence step includes `[FNAME]`, relevant recipient fields such as `[COMPANYNAME]`, a personal sender/company/website signature, and **Unsubscribe** linked to `[UNSUBSCRIBE_URL]`. Proposed draft tags are allowed before list selection; exact field mapping, sender values and working unsubscribe rendering remain mandatory before sending. Custom company tags are not universal MailWizz fields.
+
+**v3.9.1 conversation repair:** first-use greeting asks for the company/website in chat instead of a one-option setup form. General introductions lead with the buyer's purchase goal, not supporting software features; negative quality feedback preserves that offer and CTA. Stock subject examples removed. Research must cover accessible core service/use-case pages before final recommendations. Recorded conversation replays do not establish deployed-host activation or runtime tool behavior.
+
 **v3.9.0 original copy and subject hooks:** a style reference guides voice and useful detail, not sentences to copy. Exact-body preservation requires an explicit instruction; requested template variables remain supported independently. Subjects must offer a relevant reason to read that the body delivers, not just describe the service. These are copy-quality requirements, not promises of higher open rates.
 
 **v3.8.0 URL-first research:** supply a product/company URL and the bot researches relevant public pages before recommending target companies and decision-makers. It uses navigation/sitemaps, reports actual read/failed/skipped coverage and cites sources; inaccessible pages or unavailable browsing remain explicit limits. A sitemap listing is not proof of reading every page. Recommendations do not silently overwrite saved audiences or authorize sending. Supplied-template fidelity remains supported. This package provides instructions, not its own crawler; the host must expose web tools.
@@ -129,7 +133,7 @@ skills/
       evals.json                  # Behavioral evaluation prompts and expectations
 ```
 
-`evals/evals.json` is a manual evaluation dataset with 66 cases, not an automated runner or evidence of passed tests. Cases cover persistence, writing, company scope/pickers, source grounding, explicit exact-copy fidelity (61), URL-first research (62–64), reference-guided originality (65) and subject-only hooks (66); see the [evaluation guide](skills/bikram-cold-email-skill/evals/README.md). For a product URL, expect a sourced offer/audience brief and actual read/failed/skipped coverage. Native company pickers require host support; otherwise use numbered choices. Recommendations stay provisional until accepted; draft feedback stays campaign-scoped unless made enduring. `.projectmem/` is maintainer memory, not a runtime dependency. Writing references originated from [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills/tree/main/skills/cold-email).
+`evals/evals.json` is a manual dataset with 68 cases, not an automated runner or proof of passed tests. Case 68 covers tags and footer across drafts, variants, steps and output formats; older case results retain their historical version, not evidence for current defaults. See the [evaluation guide](skills/bikram-cold-email-skill/evals/README.md) for recorded runs and limits. Recommendations stay provisional until accepted; draft feedback stays campaign-scoped unless made enduring. `.projectmem/` is maintainer memory, not a runtime dependency. Writing references originated from [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills/tree/main/skills/cold-email).
 
 ## Updating
 
