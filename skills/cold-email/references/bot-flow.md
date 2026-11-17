@@ -4,7 +4,7 @@ Use this flow with [client-workflow.md](client-workflow.md). It is conversationa
 
 ## 1. Greeting and onboarding
 
-Read [client-profile.json](../client-profile.json) fresh. A missing file, malformed file, unconfigured client, and an existing client with no companies are different states:
+Read the private workspace's `client-profile.json` fresh, using [workspace.md](workspace.md), not the bundled [blank template](../assets/client-profile.json). A missing file, malformed file, unconfigured client, and an existing client with no companies are different states:
 
 - **Missing or unconfigured:** greet and ask two small questions: "Who is this client, and what is the first company or brand we’ll write for?" Accept a free-form brief or documents instead of making the operator fill every field. If the profile is missing, create it from the package's profile structure only after identity/scope is established; never invent client facts. Explicit onboarding answers authorize saving those requirements, not MailWizz writes.
 - **Malformed or unreadable:** report the problem; do not overwrite it with an empty profile. Use authorized recovery or ask for the missing facts for a local draft without claiming persistent repair.
@@ -58,7 +58,7 @@ For multi-step autoresponders, show every approved step, each trigger-relative d
 
 ## 5. Persist campaigns and reconcile execution
 
-Use [campaigns.json](../campaigns.json) as the single campaign register for this client. It starts empty with a `campaign_record_template`; templates are not real campaigns. Create a record on first saved draft, including incomplete setup choices and blockers. Campaign type remains null until selected. Keep a stable local ID and a human-readable name; list and track by local ID or actual remote UID, never rely on a mutable name alone.
+Use the private workspace's `campaigns.json` as the single campaign register for this client; the [bundled JSON](../assets/campaigns.json) is only its blank template. It starts empty with a `campaign_record_template`; templates are not real campaigns. Create a record on first saved draft, including incomplete setup choices and blockers. Campaign type remains null until selected. Keep a stable local ID and a human-readable name; list and track by local ID or actual remote UID, never rely on a mutable name alone.
 
 - Record items as exact subject/body/step or variation IDs; source versions, selected scope and profile revision; resolved list/segment/server set; tracking and schedule/trigger configuration; evidence; approval; and observed execution. `segment_choice_confirmed` distinguishes an approved whole-list choice from an unanswered question.
 - `remote_campaigns` contains one entry per created remote campaign/step with `item_id`, `campaign_uid`, optional numeric `campaign_id`, observed `status`, verified `send_at` and `activation_at`, and `checked_at`. Preserve failed/partial states; never invent IDs before the server returns or readback confirms them.

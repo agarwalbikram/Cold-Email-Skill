@@ -2,11 +2,11 @@
 
 ## One client, many companies
 
-Use [client-profile.json](../client-profile.json) as durable requirements memory, not conversation recall. Each bot gets its own private copy. Unknown values start as `null`, and `companies` and `sources` start empty; record templates are schemas to copy when onboarding, not real clients or offers.
+Use the private workspace's `client-profile.json` as durable requirements memory, not conversation recall. Follow [workspace.md](workspace.md) to initialize it from the [blank template](../assets/client-profile.json). Each bot gets its own private data directory, separate from installed skill files. Unknown values start as `null`, and `companies` and `sources` start empty; record templates are schemas to copy when onboarding, not real clients or offers.
 
 The catalog is `client -> companies -> brands -> niches and offers`. A company can have several brands; a brand can have several niches and own-product or affiliate offers. Every offer belongs to one brand and lists its applicable niche IDs. Give every record a stable unique ID; renaming a company does not change its ID or create another record.
 
-Use [bot-flow.md](bot-flow.md) for the first "Hi", returning-client options, correction handling, interactive MailWizz setup, and campaign tracking. [campaigns.json](../campaigns.json) is the sole campaign register; client-profile.json holds reusable requirements, not campaign execution state.
+Use [bot-flow.md](bot-flow.md) for the first "Hi", returning-client options, correction handling, interactive MailWizz setup, and campaign tracking. The private `campaigns.json` is the sole campaign register; client-profile.json holds reusable requirements, not campaign execution state.
 
 ### Initial onboarding
 
@@ -52,7 +52,7 @@ Include a non-sendable header identifying client/company/brand/niche/offer, mode
 
 ## Campaign record and approval packet
 
-Create an entry in [campaigns.json](../campaigns.json) from its campaign_record_template on the first saved draft. Follow [bot-flow.md](bot-flow.md) for register updates and tracking. Use safe stable local IDs, not recipient-provided paths. Store selection evidence, not recipient lists. If older `campaigns/<campaign-id>.json` records exist, preserve and validate them, migrate their exact versions/approval references/remote IDs into the register under an authorized recoverable migration, reconcile duplicates, then remove obsolete records only after verified preservation and operator-authorized cleanup. Never keep two active sources of truth or silently ignore older records. A campaign entry contains:
+Create an entry in the private `campaigns.json` from its campaign_record_template on the first saved draft. Follow [bot-flow.md](bot-flow.md) for register updates and tracking. Use safe stable local IDs, not recipient-provided paths. Store selection evidence, not recipient lists. If older `campaigns/<campaign-id>.json` records exist, preserve and validate them, migrate their exact versions/approval references/remote IDs into the register under an authorized recoverable migration, reconcile duplicates, then remove obsolete records only after verified preservation and operator-authorized cleanup. Never keep two active sources of truth or silently ignore older records. A campaign entry contains:
 
 - `local_campaign_id`, name, `version`, `record_revision`, `client_id`, `company_id`, `brand_id`, `niche_id`, `offer_id`, `campaign_mode`, `profile_revision`, and `source_versions`.
 - `output_format`, exact `items` (step/variation ID, subject, body, day offset), chosen variant IDs or split allocation, signature, disclosures, exact destination URLs, and tag mapping.

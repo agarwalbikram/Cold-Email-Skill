@@ -11,7 +11,7 @@ MailWizz MCP is the only campaign integration for this skill. Select the client/
 
 Official API documentation is versioned: [MailWizz API docs](https://api-docs.mailwizz.com/). It documents the underlying API, not the tools or guarantees of your particular MCP server.
 
-Follow [bot-flow.md](bot-flow.md) for guided selection of lists, segments, regular/autoresponder type, explicit server sets, and timing; persist setup and actual IDs in [campaigns.json](../campaigns.json). The same flow covers read-only campaign tracking and unavailable/stale metrics. Do not treat a yes to setup as authorization to create, schedule, or activate a campaign.
+Follow [bot-flow.md](bot-flow.md) for guided selection of lists, segments, regular/autoresponder type, explicit server sets, and timing; persist setup and actual IDs in the private workspace's `campaigns.json` as defined in [workspace.md](workspace.md). The same flow covers read-only campaign tracking and unavailable/stale metrics. Do not treat a yes to setup as authorization to create, schedule, or activate a campaign.
 
 ## Confirm capabilities before planning automation
 
