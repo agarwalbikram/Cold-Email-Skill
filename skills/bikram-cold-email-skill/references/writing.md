@@ -37,7 +37,9 @@ Rules that matter more than the shape:
 - **Ground every claim.** Each benefit traces to a sender source. Each observation about the recipient traces to a real, dated recipient source. Without one, use segment-level relevance ("Most brands at your stage...") and never write "I noticed", "I saw" or praise.
 - **Numbers only from pages you actually read.** A figure seen in a snippet, teaser or listing summary is unverified: read the full page or drop the number.
 - **Don't assume their stack.** Unless the brief says so, condition it: "If you sell on Faire", not "Faire takes 15% of your orders".
-- **Describe the CTA as it actually works.** If sources disagree on what the reader gets (e.g. "we review your setup" vs a self-serve quiz that emails a PDF), use the description from the CTA's own page and flag the conflict in one line after the email.
+- **Describe the CTA as it actually works.** If sources disagree on what the reader gets (e.g. "we review your setup" vs a self-serve quiz that emails a PDF), use the description from the CTA's own page and flag the conflict in one line after the email. Don't say the CTA covers a topic its page doesn't list, even when it's the topic of this email.
+- **Use the sender's fit statement.** If the sender's site says who it's for ("brands that can already fill repeat orders"), use it as a condition in the opening. It qualifies the reader honestly and sounds specific.
+- **Give before you ask.** The sender's own FAQ, guides and pricing pages hold real expertise. One practical tip from them (what buyers ask for, how a fee works) is worth more to the reader than another service description. Quote only from pages you read.
 - **Executives:** shorter and peer-level, but still explain the work. **Technical buyers:** precise mechanism, no hype. **Managers:** concrete workflow change.
 - **Don't invent** pain, results, customers, numbers, urgency, prior contact or incentives.
 
@@ -92,7 +94,8 @@ https://sender-website.com
 
 - **Variations:** the requested count, each a genuinely different angle (goal-led, outcome-led, question-led), each labeled, each with full tags and footer. Alternatives, not a send plan.
 - **Sequence:** default 3 emails at days 0, 3, 7; max 5 for unsolicited B2B. Each step shows step number, day, angle, subject, body. Never "just checking in", "bumping this", "following up on my last email", "did you see my email".
-  - **Each step stands alone.** Assume they never read the earlier ones: say who you are and what the CTA is in one clause each time ("our free wholesale audit, where we review your catalog and setup").
+  - **Plan before writing (privately).** One row per step: angle, the one new thing, its source page, the opening move, the ask wording. If two rows share an opening move or ask wording, change one before drafting.
+  - **Each step stands alone.** Assume they never read the earlier ones: say who you are and what the CTA is in one clause each time ("our free 4-minute audit, which scores your setup and sends a plan").
   - **Each step adds one new thing:** a service held back from email 1, a specific useful fact, approved proof or a resource. One new thing per step, not a recap.
   - **Vary the ask's wording and angle** while keeping the same CTA goal. Four identical "want the link?" questions is a failure.
   - Follow-ups get shorter: 40–80 words. Lead with the reader's benefit, not your pricing mechanics, unless price is the point of that step.
@@ -108,13 +111,14 @@ Read subject and full body together, as the recipient. Fix anything that fails, 
 
 1. Would this reader know in the first two lines why it's for them?
 2. Is the work explained in plain verbs, connected to their goal, with at most 2 services in a first touch?
-3. Is every claim sourced, every number from a page you actually read, and nothing invented about the recipient?
-4. One CTA, the confirmed one, as an easy question that offers the work, not just a link?
+3. Is every claim sourced, every number from a page you actually read, and nothing invented or assumed about the recipient's tools?
+4. One CTA, the confirmed one, as an easy question that offers the work, described the way its own page describes it?
 5. Does the subject promise something the body delivers?
-6. Tags, signature, website and linked unsubscribe present on every item?
-7. Is the opening and every sentence original, not reused from an example in this skill?
-8. Sequences: does each step stand alone, add one new thing, and word its ask differently?
-9. [humanizer.md](humanizer.md) pass done: no AI tells, no dashes (unless the voice sample uses them), varied rhythm?
+6. Does the reader get something useful even if they never reply (a fact, a tip, a clear picture of the work)?
+7. Tags, signature, website and linked unsubscribe present on every item?
+8. Is the opening and every sentence original, not reused from an example in this skill?
+9. Sequences: does each step stand alone, add one new thing, open differently, word its ask differently, and stay within 40–80 words after step 1?
+10. [humanizer.md](humanizer.md) pass done: no AI tells, no dashes (unless the voice sample uses them), varied rhythm? Read it aloud in your head: would a busy owner believe one person typed this?
 
 Then present: company/brand label, subject, body. Put blockers (missing sender name, unverified tags, missing address) in one or two short lines after the email, not inside it. No self-grading, no "here are some options", no offer to "make it punchier".
 

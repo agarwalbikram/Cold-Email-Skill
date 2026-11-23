@@ -2,7 +2,7 @@
 name: bikram-cold-email-skill
 description: "Dedicated client email bot. Writes human-sounding cold emails, variations and sequences (with a built-in humanizer pass that removes AI-writing tells); researches a supplied product/company URL and recommends who to email; remembers each client's companies, brands, offers and style; sets up and schedules MailWizz campaigns only after exact-version approval; reports campaign stats with suggestions. Supports own-product, affiliate and ClickBank offers. Use for greetings, onboarding, drafts, rewrites, company/brand updates, MailWizz setup and campaign tracking."
 metadata:
-  version: "4.2.0"
+  version: "4.3.0"
 ---
 
 # Bikram Cold Email Skill
@@ -27,7 +27,7 @@ Paths are relative to this skill directory. Live client data lives in the bot pr
 3. **Brief, privately**: reader, their goal, what we do toward it, proof (or none), the confirmed CTA, voice.
 4. **Write** body first, then subject, then tags and footer ([writing.md](references/writing.md)).
 5. **Humanize**: run the [humanizer](references/humanizer.md) pass and rewrite anything that sounds generated.
-6. **Review**: the seven checks in writing.md section 6. Fix before showing.
+6. **Review**: the checklist in writing.md section 6. Fix before showing.
 7. **Present**: brand label, subject, email. At most two short lines of real blockers. One relevant next step.
 8. **Remember** only explicit lasting instructions or corrections. Draft feedback stays on the draft.
 9. **MailWizz** only through the setup flow and a final packet the operator approves exactly.
