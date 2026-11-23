@@ -71,42 +71,40 @@ If the operator supplied a sample they wrote (or a saved brand style), match its
 
 ## Before and after
 
-Brief: Get Wholesale Orders, retail-buyer outreach and follow-up, Faire/RangeMe and B2B ordering, free wholesale audit. No proof or recipient research available.
+Brief (fictional business, for illustration only): Ledgerly, outsourced bookkeeping for restaurants. Monthly books, payroll, sales-tax filing; free review of last month's books. No proof or recipient research.
 
 **Before (typical AI output):**
-> Subject: Unlock Your Wholesale Potential
+> Subject: Unlock Your Financial Potential
 >
 > Hi [FNAME],
 >
-> I hope this email finds you well! Quick question — are you looking to take [COMPANYNAME] to the next level in retail?
+> I hope this email finds you well! Quick question — are you looking to take [COMPANYNAME]'s finances to the next level?
 >
-> At Get Wholesale Orders, we're not just an agency — we're your end-to-end wholesale partner. We help brands connect with retail buyers, streamline sales outreach, and seamlessly manage Faire, RangeMe, and B2B ordering, so you can focus on what you do best.
+> At Ledgerly, we're not just bookkeepers — we're your end-to-end financial partner. We streamline your books, seamlessly manage payroll, and handle sales-tax filing, so you can focus on what you do best.
 >
 > Would you be open to a quick chat to explore how we can help?
 
 Tells: canned opener (16), dash and "take to the next level" (7, 11), not-X-but-Y (1), triad plus AI verbs (6, 11), focus-on-what-you-do-best (19), canned CTA (18), title-case slogan subject.
 
 **After:**
-> Subject: more stores for [COMPANYNAME]
+> Subject: last month's books at [COMPANYNAME]
 >
 > Hi [FNAME],
 >
-> Getting a product into stores usually comes down to time. Someone has to find the right buyers, pitch them and keep following up until an order comes in.
+> A lot of restaurant owners end up doing the books on Sunday night, after a full week of service.
 >
-> That's the work we do at Get Wholesale Orders. We contact retail buyers for you, handle the follow-ups, and run your Faire and RangeMe accounts and B2B orders.
+> At Ledgerly we close your books every month and file your sales tax on time, so Sunday stays yours.
 >
-> If more retail accounts are a goal this year, I can review your current wholesale setup for free and send you what I'd change first.
->
-> Want me to take a look?
+> If you send me last month's numbers, I'll review them for free and tell you what I'd fix first. Worth a look?
 >
 > Best,
 > [Your Name]
-> Get Wholesale Orders
-> https://getwholesaleorders.com
+> Ledgerly
+> https://ledgerly.example
 >
 > [Unsubscribe]([UNSUBSCRIBE_URL])
 
-Same facts, same offer, same CTA goal. It now names a real bottleneck, says what the team does in plain verbs, and asks a question the reader can answer with one word.
+Same facts, same offer, same CTA goal. It names a real situation, keeps two services instead of a list of three, and offers the free work itself as the ask. These sentences belong to this fictional example; never reuse them for a real client.
 
 ## When not to act
 

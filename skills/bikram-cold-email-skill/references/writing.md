@@ -23,10 +23,10 @@ If the reader, the offer or the CTA is unknown and the profile can't answer, ask
 
 Default shape for a first touch. Bend it when the brief calls for something else.
 
-1. **Opening (1–2 sentences): their world.** The goal or bottleneck this reader has, stated as something they'd agree with. No greeting fluff, no "I", no lecture about the industry.
-2. **What we do (2–3 sentences): the work.** Who you are in half a sentence, then what you actually do toward that goal, in verbs: "We contact retail buyers for you and follow up until they order." Group related services; don't list the menu.
+1. **Opening (1–2 sentences): their world.** The goal or bottleneck this reader has, stated as something they'd agree with. No greeting fluff, no "I", no lecture about the industry. Write it fresh from this brief; never start from an example's opening line.
+2. **What we do (2–3 sentences): the work.** Who you are in half a sentence, then what you actually do toward that goal, in verbs: "We contact retail buyers for you and follow up until they order." **First touch: at most 2 services**, the ones closest to the reader's goal. Save the rest for follow-ups, one per step.
 3. **Why it matters (optional, 1 sentence).** A practical result for them, only if supported. Proof goes here if you have it.
-4. **One ask (1 sentence).** A question they can answer quickly, tied to the confirmed CTA.
+4. **One ask (1 sentence).** A question they can answer quickly, tied to the confirmed CTA. Offer the work itself, not a link to it: "Want me to look at your current setup and send back what I'd change first?" beats "Want the link to our audit?". Describe what they get from the CTA using the sender's own source wording.
 
 Rules that matter more than the shape:
 
@@ -35,6 +35,7 @@ Rules that matter more than the shape:
 - **"You" more than "we", but "we" is allowed.** A clear company introduction is fine; marketing intent is not something to hide.
 - **One CTA.** A signature website and the unsubscribe link don't count as extra asks.
 - **Ground every claim.** Each benefit traces to a sender source. Each observation about the recipient traces to a real, dated recipient source. Without one, use segment-level relevance ("Most brands at your stage...") and never write "I noticed", "I saw" or praise.
+- **Numbers only from pages you actually read.** A figure seen in a snippet, teaser or listing summary is unverified: read the full page or drop the number.
 - **Executives:** shorter and peer-level, but still explain the work. **Technical buyers:** precise mechanism, no hype. **Managers:** concrete workflow change.
 - **Don't invent** pain, results, customers, numbers, urgency, prior contact or incentives.
 
@@ -88,9 +89,12 @@ https://sender-website.com
 ## 5. Variations and sequences
 
 - **Variations:** the requested count, each a genuinely different angle (goal-led, outcome-led, question-led), each labeled, each with full tags and footer. Alternatives, not a send plan.
-- **Sequence:** default 3 emails at days 0, 3, 7; max 5 for unsolicited B2B. Each step shows step number, day, angle, subject, body. Every step adds something new (a different benefit, a useful resource, a specific idea, approved proof) and stands alone. Follow-ups get shorter. Never "just checking in", "bumping this", "following up on my last email", "did you see my email". The last step is a short, honest close:
-
-> I'll stop here so I'm not cluttering your inbox. If getting into more stores comes up later, just reply and I'll pick it up.
+- **Sequence:** default 3 emails at days 0, 3, 7; max 5 for unsolicited B2B. Each step shows step number, day, angle, subject, body. Never "just checking in", "bumping this", "following up on my last email", "did you see my email".
+  - **Each step stands alone.** Assume they never read the earlier ones: say who you are and what the CTA is in one clause each time ("our free wholesale audit, where we review your catalog and setup").
+  - **Each step adds one new thing:** a service held back from email 1, a specific useful fact, approved proof or a resource. One new thing per step, not a recap.
+  - **Vary the ask's wording and angle** while keeping the same CTA goal. Four identical "want the link?" questions is a failure.
+  - Follow-ups get shorter. Lead with the reader's benefit, not your pricing mechanics, unless price is the point of that step.
+  - The last step is a short, honest close in your own words: say this is the last email, leave one useful thing, and say how to restart (reply).
 
 - Any reply stops the sequence for that person; opt-outs and hard bounces are suppressed everywhere ([mailwizz.md](mailwizz.md)).
 - Starting send time: Tue–Thu, 9–11 am or 1–3 pm recipient local time. A default, not a rule.
@@ -100,12 +104,14 @@ https://sender-website.com
 Read subject and full body together, as the recipient. Fix anything that fails, in this response:
 
 1. Would this reader know in the first two lines why it's for them?
-2. Is the work explained in plain verbs, connected to their goal, not a service list?
-3. Is every claim sourced and nothing invented about the recipient?
-4. One CTA, the confirmed one, as an easy question?
+2. Is the work explained in plain verbs, connected to their goal, with at most 2 services in a first touch?
+3. Is every claim sourced, every number from a page you actually read, and nothing invented about the recipient?
+4. One CTA, the confirmed one, as an easy question that offers the work, not just a link?
 5. Does the subject promise something the body delivers?
 6. Tags, signature, website and linked unsubscribe present on every item?
-7. [humanizer.md](humanizer.md) pass done: no AI tells, no dashes (unless the voice sample uses them), varied rhythm?
+7. Is the opening and every sentence original, not reused from an example in this skill?
+8. Sequences: does each step stand alone, add one new thing, and word its ask differently?
+9. [humanizer.md](humanizer.md) pass done: no AI tells, no dashes (unless the voice sample uses them), varied rhythm?
 
 Then present: company/brand label, subject, body. Put blockers (missing sender name, unverified tags, missing address) in one or two short lines after the email, not inside it. No self-grading, no "here are some options", no offer to "make it punchier".
 
@@ -117,23 +123,23 @@ Then present: company/brand label, subject, body. Put blockers (missing sender n
 
 ## 8. What good looks like
 
-Two short examples written from limited facts. Learn the moves, don't reuse the sentences.
+Two short examples for **fictional** businesses. They show the moves (fresh opening, at most two services, an ask that offers the work). Never reuse their sentences, openings or subjects for a real client; every real draft starts from its own brief.
 
-**Agency services, no proof, meeting CTA by reply:**
-> Subject: retail buyers for [COMPANYNAME]
+**Fictional product-photo studio, no proof, meeting CTA by reply:**
+> Subject: product photos that sell on Amazon
 >
 > Hi [FNAME],
 >
-> A lot of brands have a product stores would happily carry. What they don't have is someone whose whole job is getting it in front of buyers.
+> When a listing gets traffic but few sales, the photos are usually the first thing shoppers judge and the last thing brands update.
 >
-> That's what we do at Get Wholesale Orders. We find retail buyers who fit your category, pitch them for you and follow up until there's an answer. We also run your Faire and RangeMe listings so orders coming in through those don't sit.
+> At Brightframe Studio we shoot white-background and lifestyle images sized for Amazon and Shopify, and we retouch the ones you already have.
 >
-> Open to a 20-minute call next week to see if it fits? Just reply with a day that works.
+> Could we do a 20-minute call next week? Reply with a day and I'll send a time.
 >
 > Best,
 > [Your Name]
-> Get Wholesale Orders
-> https://getwholesaleorders.com
+> Brightframe Studio
+> https://brightframe.example
 >
 > [Unsubscribe]([UNSUBSCRIBE_URL])
 

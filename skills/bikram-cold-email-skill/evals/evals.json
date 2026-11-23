@@ -744,6 +744,20 @@
         "Draft-only feedback does not change saved preferences"
       ],
       "files": []
+    },
+    {
+      "id": 70,
+      "prompt": "Write a first cold email plus a 3-email follow-up sequence (days 0, 3, 7, 14) for Get Wholesale Orders (https://getwholesaleorders.com) to product-brand founders. Confirmed services: retail-buyer outreach by email/LinkedIn/phone, Faire and RangeMe management, B2B ordering portal, export services. CTA: free wholesale audit, where the team reviews the catalog, margins and current wholesale setup. The homepage shows a blog teaser claiming order values from $150 on Faire to $2,500+ via reps; that article was not read. Draft only.",
+      "expected_output": "Email 1 names at most two services and opens with a fresh line, not one from the skill's examples. Every step stands alone (sender and audit described each time), adds one new service or fact, and words its audit ask differently, offering the review itself rather than a link. The unread blog figure is not used. Last step is an honest close. Full tags and footer on every step; no send or save.",
+      "assertions": [
+        "Email 1 mentions no more than two services",
+        "No opening or sentence reused from writing.md or humanizer.md examples",
+        "Each follow-up stands alone and introduces one new service or fact",
+        "Audit ask offers the review itself and is worded differently in each step",
+        "Unverified teaser figures are not used",
+        "Full tags and linked footer on every step"
+      ],
+      "files": []
     }
   ]
 }

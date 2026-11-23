@@ -1,10 +1,10 @@
 # Evaluations
 
-`evals.json` holds 69 manual scenarios: prompts, expected behavior, assertions and fixture links. It is a dataset, not a test runner or a record of passes. A case counts as passed only after someone runs it against the installed skill, inspects the reply and file/host trace, and records the result outside this folder.
+`evals.json` holds 70 manual scenarios: prompts, expected behavior, assertions and fixture links. It is a dataset, not a test runner or a record of passes. A case counts as passed only after someone runs it against the installed skill, inspects the reply and file/host trace, and records the result outside this folder.
 
 | Cases | Area |
 | --- | --- |
-| 1–11, 29–30, 36–44, 48–50, 61, 65–66, 68–69 | Writing, subjects, tags/footer, humanizer pass, reports, replies |
+| 1–11, 29–30, 36–44, 48–50, 61, 65–66, 68–70 | Writing, subjects, tags/footer, humanizer pass, reports, replies |
 | 12–28, 51–57 | Scope pickers, memory vs draft edits, MailWizz setup, approval, autoresponders |
 | 31–35, 45–47 | File-backed persistence: onboarding, returning greeting, corrections, malformed file, save failure |
 | 58–60, 67 | Multi-turn conversation replays |
