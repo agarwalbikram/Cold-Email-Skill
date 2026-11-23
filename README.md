@@ -23,7 +23,7 @@ skills/bikram-cold-email-skill/
     campaign-modes.md               # Own-product / affiliate / ClickBank rules
     mailwizz.md                     # Scheduling checks, reporting, replies, suppression
   assets/                           # Blank client-profile.json and campaigns.json templates
-  evals/                            # 70 manual scenarios + synthetic fixtures
+  evals/                            # 36 manual scenarios + synthetic fixtures
 ```
 
 ## Install

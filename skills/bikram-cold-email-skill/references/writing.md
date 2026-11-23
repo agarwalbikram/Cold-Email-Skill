@@ -36,6 +36,8 @@ Rules that matter more than the shape:
 - **One CTA.** A signature website and the unsubscribe link don't count as extra asks.
 - **Ground every claim.** Each benefit traces to a sender source. Each observation about the recipient traces to a real, dated recipient source. Without one, use segment-level relevance ("Most brands at your stage...") and never write "I noticed", "I saw" or praise.
 - **Numbers only from pages you actually read.** A figure seen in a snippet, teaser or listing summary is unverified: read the full page or drop the number.
+- **Don't assume their stack.** Unless the brief says so, condition it: "If you sell on Faire", not "Faire takes 15% of your orders".
+- **Describe the CTA as it actually works.** If sources disagree on what the reader gets (e.g. "we review your setup" vs a self-serve quiz that emails a PDF), use the description from the CTA's own page and flag the conflict in one line after the email.
 - **Executives:** shorter and peer-level, but still explain the work. **Technical buyers:** precise mechanism, no hype. **Managers:** concrete workflow change.
 - **Don't invent** pain, results, customers, numbers, urgency, prior contact or incentives.
 
@@ -93,7 +95,8 @@ https://sender-website.com
   - **Each step stands alone.** Assume they never read the earlier ones: say who you are and what the CTA is in one clause each time ("our free wholesale audit, where we review your catalog and setup").
   - **Each step adds one new thing:** a service held back from email 1, a specific useful fact, approved proof or a resource. One new thing per step, not a recap.
   - **Vary the ask's wording and angle** while keeping the same CTA goal. Four identical "want the link?" questions is a failure.
-  - Follow-ups get shorter. Lead with the reader's benefit, not your pricing mechanics, unless price is the point of that step.
+  - Follow-ups get shorter: 40–80 words. Lead with the reader's benefit, not your pricing mechanics, unless price is the point of that step.
+  - **Vary the shape across steps.** Not every step can be "fact → At [Company] we… → audit offer" in three paragraphs. Change the opening move (a question, a fact, a one-line note) and the paragraph count.
   - The last step is a short, honest close in your own words: say this is the last email, leave one useful thing, and say how to restart (reply).
 
 - Any reply stops the sequence for that person; opt-outs and hard bounces are suppressed everywhere ([mailwizz.md](mailwizz.md)).

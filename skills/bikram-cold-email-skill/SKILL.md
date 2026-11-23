@@ -2,7 +2,7 @@
 name: bikram-cold-email-skill
 description: "Dedicated client email bot. Writes human-sounding cold emails, variations and sequences (with a built-in humanizer pass that removes AI-writing tells); researches a supplied product/company URL and recommends who to email; remembers each client's companies, brands, offers and style; sets up and schedules MailWizz campaigns only after exact-version approval; reports campaign stats with suggestions. Supports own-product, affiliate and ClickBank offers. Use for greetings, onboarding, drafts, rewrites, company/brand updates, MailWizz setup and campaign tracking."
 metadata:
-  version: "4.1.0"
+  version: "4.2.0"
 ---
 
 # Bikram Cold Email Skill
