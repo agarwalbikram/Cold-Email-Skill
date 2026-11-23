@@ -92,10 +92,10 @@
     },
     {
       "prompt": "Write a cold email to a VP of Finance at a 200-person company pitching our expense-report tool.",
-      "expected_output": "Should write a clear, concise cold email following the requested or saved brand style. Avoid mechanical, repetitive or empty uses of canned openings, contrast reveals, negation lists and self-answered questions; judge wording and punctuation in context rather than banning those forms. Quick question and em dashes are allowed when natural. Keep one primary low-friction conversion goal.",
+      "expected_output": "Write a clear, specific cold email that passes the humanizer pass in references/humanizer.md: no canned opener, no not-X-but-Y contrast, no forced triad, no AI vocabulary, no em dashes (no voice sample was supplied), varied sentence length. Keep one primary low-friction conversion goal.",
       "assertions": [
-        "Avoids mechanical, repetitive or empty phrasing without treating contrasts, lists or question forms as automatic failures",
-        "Uses 'Quick question' or an em dash only if natural and suited to the requested or saved style",
+        "No humanizer tells from references/humanizer.md sections A-D",
+        "No em or en dashes in generated copy without a voice sample that uses them",
         "One low-friction ask"
       ],
       "files": [],
@@ -730,6 +730,19 @@
       "prompt": "Run independent draft cases for one email,2alternatives and3sequence steps from Get Wholesale Orders: retail-buyer outreach/follow-up, Faire/RangeMe,B2B ordering; free audit; website https://getwholesaleorders.com; no list or personal sender. Require relevant draft tags and full linked signature/footer per item. Also test HTML,plain text,another sender/affiliate,confirmed sender,and actual COMPANY vs COMPANYNAME mapping. Exact-copy countercase: operator says preserve body 'Hi {{first_name}}, Would more retail stockists interest {{company}}?' with footer 'Best, Get Wholesale Orders', no website or unsubscribe. Retain supplied editorial variables locally but repair mandatory signature/site/unsubscribe and disclose exception; no byte-for-byte claim. Subject-only output does not regenerate body. No sends or claimed verification.",
       "expected_output": "Every full item includes appropriate draft tags and complete personal signature/linked unsubscribe, not just first step or notes. HTML uses an anchor, plain text prints system-tag URL, Markdown uses a linked label. Correct sender identity per scope and confirmed names replace editorial placeholders; company tags refer to recipient only. Explicitly flag unknown/mismatched mappings before execution rather than remove tags or claim readiness. Required disclosures/address remain additional sending requirements.",
       "assertions": ["Every full email/variant/step includes relevant draft tags", "Every item includes personal sender, correct company/site and linked unsubscribe tag", "HTML/Markdown/plain-text formats remain distinct", "Company tag is not treated as sender identity or universal system field", "Mapping/rendering unresolved blocks sending, not local drafting", "Subject-only edits do not regenerate or strip existing footer"],
+      "files": []
+    },
+    {
+      "id": 69,
+      "prompt": "Rewrite this draft, it sounds like AI. Keep the offer and the free audit CTA. 'Subject: Unlock Your Wholesale Potential\\n\\nHi [FNAME],\\n\\nI hope this email finds you well! Quick question — are you looking to take [COMPANYNAME] to the next level in retail?\\n\\nAt Get Wholesale Orders, we're not just an agency — we're your end-to-end wholesale partner. We help brands connect with retail buyers, streamline sales outreach, and seamlessly manage Faire, RangeMe, and B2B ordering, so you can focus on what you do best.\\n\\nWould you be open to a quick chat to explore how we can help?' Confirmed: Get Wholesale Orders, https://getwholesaleorders.com, services as listed, free wholesale audit. No proof or personal sender name. Draft only.",
+      "expected_output": "One rewritten email, not a list of tells or options. Keeps the same services, audience and free audit CTA (does not switch to a meeting). Removes every listed tell: canned opener, dashes, not-X-but-Y, 'next level', 'end-to-end', 'streamline', 'seamlessly', the triad, 'focus on what you do best', 'quick chat to explore'. Specific subject in sentence case or lowercase. Full tags and footer with [Your Name] and linked [UNSUBSCRIBE_URL]. No invented proof, no save, no send.",
+      "assertions": [
+        "Returns one final email without showing the marked-up pass",
+        "None of the listed AI tells survive, including dashes",
+        "Offer, services and free audit CTA preserved without new incentives or proof",
+        "Includes [FNAME], recipient [COMPANYNAME] where natural, and the full linked footer",
+        "Draft-only feedback does not change saved preferences"
+      ],
       "files": []
     }
   ]
